@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash -ex
 sudo apt-get update
 
 apt install unzip
@@ -17,7 +17,7 @@ cd /var/app
 npm install
 
 cd
-wget https://github.com/node-app
+wget https://raw.githubusercontent.com/wdoganowski/liczyrzepa_db/main/ec2/node-app
 cp node-app /etc/init.d
 /sbin/update-rc.d node-app defaults
 
