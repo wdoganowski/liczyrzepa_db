@@ -232,6 +232,7 @@ exports.updateEmployee = (req, res, next) => {
     });
   }
 };
+
 exports.getEmployeePhoto = (req, res, next) => {
   const objectKey = req.body['key'];
   if (objectKey === '') {
