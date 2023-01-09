@@ -15,6 +15,10 @@ unzip -o app.zip -d /var/app
 cd /var/app
 npm install
 
+export DEFAULT_AWS_REGION=eu-north-1
+export PHOTOS_BUCKET=liczyrzepa-s3-bucket-01
+export SHOW_ADMIN_TOOLS=1
+
 cd /root
 wget https://raw.githubusercontent.com/wdoganowski/liczyrzepa_db/main/ec2/node-app
 cp node-app /etc/init.d
