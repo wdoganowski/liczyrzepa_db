@@ -10,6 +10,10 @@ Globals:
   Function:
     Timeout: 3
     MemorySize: 128
+    Environment:
+      Variables:
+        POWERTOOLS_SERVICE_NAME: liczyrzepa_api
+        LOG_LEVEL: DEBUG
 
 Resources:
   LiczyrzepaAPIFunction:
@@ -19,11 +23,17 @@ Resources:
       Architectures:
         - x86_64
       Events:
-        Liczyrzepa:
+        GetAll:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
           Properties:
             Path: /get
             Method: get
+        GetById:
+          Type: Api 
+          Properties:
+            Path: /get/{id}
+            Method: get
+      ImageUri: liczyrzepaapifunction:python3.9-v1
     Metadata:
       Dockerfile: Dockerfile
       DockerContext: ./api
@@ -61,14 +71,64 @@ Resources:
   #       FromPort: 80
   #       ToPort: 80
   #       CidrIp: 0.0.0.0/0
-  DBCluster:
+  MonitoringRdsRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+        - Effect: Allow
+          Principal:
+            Service:
+            - monitoring.rds.amazonaws.com
+          Action:
+          - sts:AssumeRole
+      ManagedPolicyArns:
+      - arn:aws:iam::aws:policy/service-role/AmazonRDSEnhancedMonitoringRole
+      Path: /
+  RdsDbClusterParameterGroup:
+    Type: AWS::RDS::DBClusterParameterGroup
+    Properties:
+      Description: CloudFormation Aurora Cluster Parameter Group
+      Family: aurora-mysql5.7 #https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.serverless_2_08_03.html
+      Parameters:
+        server_audit_logging: 0
+        server_audit_events: 'CONNECT,QUERY,QUERY_DCL,QUERY_DDL,QUERY_DML,TABLE'
+      Tags:
+        - Key: CloudFormationArn
+          Value: !Ref 'AWS::StackId'
+  DBCluster: # See this example https://github.com/suzryo/aws/blob/master/CFn/aurora-mysql-57/aurora-mysql57-sample.yaml
     Type: AWS::RDS::DBCluster
     Properties:
+      DatabaseName: 'Liczyrzepadb'
       Engine: aurora-mysql
+      EngineVersion: 8.0.mysql_aurora.3.02.0
+      DBClusterIdentifier : !Sub '${AWS::StackName}-dbcluster'
+      #DBClusterParameterGroupName: !Ref 'RdsDbClusterParameterGroup'
+      ServerlessV2ScalingConfiguration: #https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-serverlessv2scalingconfiguration.html
+        MaxCapacity: 1.0
+        MinCapacity: 0.5
       MasterUsername: liczyrzepa # to be changed to IAM
       MasterUserPassword: password
       # VPCSecurityGroups:
       # - !GetAtt DBEC2SecurityGroup.GroupId
+  DBInstance1:
+    Type: AWS::RDS::DBInstance
+    Properties:
+      Engine: aurora-mysql
+      EngineVersion: 8.0.mysql_aurora.3.02.0
+      DBClusterIdentifier: !Ref 'DBCluster'
+      DBInstanceIdentifier : !Sub '${AWS::StackName}-dbinstance-1'
+      AutoMinorVersionUpgrade: 'true'
+      PubliclyAccessible: 'true'
+      #PreferredMaintenanceWindow: Thu:19:05-Thu:19:35
+      #AvailabilityZone: !Select [0, !GetAZs {Ref: 'AWS::Region'}]
+      DBInstanceClass: db.serverless
+      MonitoringInterval: 60
+      MonitoringRoleArn: !GetAtt 'MonitoringRdsRole.Arn'
+      Tags:
+        - Key: CloudFormationArn
+          Value: !Ref 'AWS::StackId'
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function

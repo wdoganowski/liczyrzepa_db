@@ -2,7 +2,7 @@ import json
 
 import pytest
 
-from api import app
+from api import router
 
 
 @pytest.fixture()
@@ -64,7 +64,7 @@ def apigw_event():
 
 def test_lambda_handler(apigw_event, mocker):
 
-    ret = app.lambda_handler(apigw_event, "")
+    ret = router.lambda_handler(apigw_event, "")
     data = json.loads(ret["body"])
 
     assert ret["statusCode"] == 200

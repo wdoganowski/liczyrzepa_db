@@ -94,8 +94,8 @@ You can find more information and examples about filtering Lambda function logs 
 Tests are defined in the `tests` folder in this project. Use PIP to install the [pytest](https://docs.pytest.org/en/latest/) and run unit tests from your local machine.
 
 ```bash
-liczyrzepa-api$ pip install pytest pytest-mock --user
-liczyrzepa-api$ python -m pytest tests/ -v
+liczyrzepa-api$ pip3.9 install pytest pytest-mock --user
+liczyrzepa-api$ python3.9 -m pytest tests/ -v
 ```
 
 ## Cleanup
