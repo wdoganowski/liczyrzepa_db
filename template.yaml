@@ -5,6 +5,17 @@ Description: >
 
   SAM Template for liczyrzepa-api
 
+Parameters:
+  StageAliasName:
+    Description: stage / alias name to be used in this deploy
+    Type: String
+    AllowedValues:
+      - prod
+      - stage
+      - dev
+      - v1
+    Default: dev
+
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
   Function:
@@ -12,22 +23,73 @@ Globals:
     MemorySize: 128
 
 Resources:
+  ApiGatewayApi:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: !Ref StageAliasName
+
   LiczyrzepaAPIFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
+      AutoPublishAlias: !Ref StageAliasName
       PackageType: Image
       Architectures:
         - x86_64
+      Environment:
+        Variables:
+          stage: !Ref StageAliasName
       Events:
         Liczyrzepa:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
           Properties:
-            Path: /
+            RestApiId: !Ref ApiGatewayApi
+            Path: /get
             Method: get
     Metadata:
       Dockerfile: Dockerfile
       DockerContext: ./api
       DockerTag: python3.9-v1
+  # LiczyrzepaAPIFunctionPermissions:
+  #   Type: AWS::Lambda::Permission
+  #   Properties:
+  #     FunctionName: !Ref LiczyrzepaAPIFunction
+  #     Action: lambda:InvokeFunctionUrl
+  #     Principal: "*"
+  #     FunctionUrlAuthType: NONE
+  # LiczyrzepaAPIFunctionUrl:
+  #   Type: AWS::Lambda::Url
+  #   Properties: 
+  #     AuthType: NONE
+  #     TargetFunctionArn: !Ref LiczyrzepaAPIFunction
+
+  # https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-rds.html
+  # DBEC2SecurityGroup:
+  #   Type: AWS::EC2::SecurityGroup
+  #   Properties:
+  #     GroupDescription: Open database for access
+  #     SecurityGroupIngress:
+  #     - IpProtocol: tcp
+  #       FromPort: 3306
+  #       ToPort: 3306
+  #       SourceSecurityGroupName:
+  #         Ref: WebServerSecurityGroup
+  # WebServerSecurityGroup:
+  #   Type: AWS::EC2::SecurityGroup
+  #   Properties:
+  #     GroupDescription: Enable HTTP access via port 80 access
+  #     SecurityGroupIngress:
+  #     - IpProtocol: tcp
+  #       FromPort: 80
+  #       ToPort: 80
+  #       CidrIp: 0.0.0.0/0
+  DBCluster:
+    Type: AWS::RDS::DBCluster
+    Properties:
+      Engine: aurora-mysql
+      MasterUsername: liczyrzepa # to be changed to IAM
+      MasterUserPassword: password
+      # VPCSecurityGroups:
+      # - !GetAtt DBEC2SecurityGroup.GroupId
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
@@ -35,7 +97,7 @@ Outputs:
   # https://github.com/awslabs/serverless-application-model/blob/master/docs/internals/generated_resources.rst#api
   LiczyrzepaApi:
     Description: "API Gateway endpoint URL for Prod stage for Liczyrzepa API function"
-    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/prod/"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
   LiczyrzepaAPIFunction:
     Description: "Liczyrzepa API Lambda Function ARN"
     Value: !GetAtt LiczyrzepaAPIFunction.Arn
