@@ -5,17 +5,6 @@ Description: >
 
   SAM Template for liczyrzepa-api
 
-Parameters:
-  StageAliasName:
-    Description: stage / alias name to be used in this deploy
-    Type: String
-    AllowedValues:
-      - prod
-      - stage
-      - dev
-      - v1
-    Default: dev
-
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
   Function:
@@ -23,26 +12,16 @@ Globals:
     MemorySize: 128
 
 Resources:
-  ApiGatewayApi:
-    Type: AWS::Serverless::Api
-    Properties:
-      StageName: !Ref StageAliasName
-
   LiczyrzepaAPIFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
-      AutoPublishAlias: !Ref StageAliasName
       PackageType: Image
       Architectures:
         - x86_64
-      Environment:
-        Variables:
-          stage: !Ref StageAliasName
       Events:
         Liczyrzepa:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
           Properties:
-            RestApiId: !Ref ApiGatewayApi
             Path: /get
             Method: get
     Metadata:
