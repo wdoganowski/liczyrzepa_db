@@ -24,12 +24,12 @@
 | Entity     | PK                    | SK                 | Covered methods |
 |------------|-----------------------|--------------------|-----------------|
 | country    | CNTRY#{country}       | CNTRY#{country}    | 2               |
-| region     | CNTRY#{country}       | REGIN#{region}     | 3, 4            |
-| range      | REGIN#{region}        | RANGE#{range}      | 5, 6            |
+| region     | CNTRY#{country}       | REGIO#{region}     | 3, 4            |
+| range      | REGIO#{region}        | RANGE#{range}      | 5, 6            |
 | shelter    | RANGE{range}          | SHLTR#{shelter}    | 7, 8            |
 | s_picture  | SHLTR#{shelter}       | PICTR#{picture}    | 9               |
 | s_opinion  | SHLTR#{shelter}       | OPINN#{picture}    | 10              |
-| mountain   | MOUNT{range}          | MOUNT#{mountain}   | 12, 13          |
+| mountain   | RANGE#{range}         | MOUNT#{mountain}   | 12, 13          |
 | m_picture  | MOUNT#{mountain}      | PICTR#{picture}    | 14              |
 | m_opinion  | MOUNT#{mountain}      | OPINN#{picture}    | 15              |
 
@@ -41,8 +41,8 @@
 
 | Entity     | GSI2PK                | GSI2SK             | Covered methods |
 |------------|-----------------------|--------------------|-----------------|
-| shelter    | REGIN#{region}        | SHLTR#{elevation}  | 11              |
-| mountain   | REGIN#{region}        | MOUNT#{elevation}  | 16              |
+| shelter    | REGIO#{region}        | SHLTR#{elevation}  | 11              |
+| mountain   | REGIO#{region}        | MOUNT#{elevation}  | 16              |
 
 | Entity     | GSI3PK                | GSI3SK             | Covered methods |
 |------------|-----------------------|--------------------|-----------------|

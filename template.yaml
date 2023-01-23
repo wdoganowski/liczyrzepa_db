@@ -76,6 +76,7 @@ Resources:
   # DynamoDB table to store item: {id: &lt;ID&gt;, name: &lt;NAME&gt;}
   LiczyrzepaDB:
     Type: AWS::DynamoDB::Table
+    DeletionPolicy: Retain
     Properties:
       TableName: Liczyrzepa
       AttributeDefinitions:
@@ -126,6 +127,14 @@ Resources:
           Projection:
             ProjectionType: ALL
       BillingMode: PAY_PER_REQUEST
+      SSESpecification: # Server side encryption managed by AWS - Free of charge
+        SSEEnabled: False
+      ImportSourceSpecification:
+        InputCompressionType: NONE
+        InputFormat: CSV
+        S3BucketSource:
+          S3Bucket: 'liczyrzepa-s3-bucket-01'
+          S3KeyPrefix: 'db-backup/liczyrzepa_db.csv'
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function

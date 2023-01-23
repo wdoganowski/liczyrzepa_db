@@ -1,0 +1,470 @@
+PK,SK,GSI1PK,GSI1SK,GSI2PK,GSI2SK,GSI3PK,GSI3SK,CountryName,RegionName,RangeName,MountainName,Elevation,GeoCoordinates,Latitude,Longitude,Attributes
+CNTRY#polska,CNTRY#polska,CNTRY,CNTRY#polska,,,,,Polska
+CNTRY#polska,REGIO#sudety-srodkowe,,,,,,,Polska,Sudety Środkowe
+REGIO#sudety-srodkowe,RANGE#gory-stolowe,,,,,,,Polska,Sudety Środkowe,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#szczeliniec-wielki,CNTRY#polska,MOUNT#00919,REGIO#sudety-srodkowe,MOUNT#00919,RANGE#gory-stolowe,MOUNT#00919,Polska,Sudety Środkowe,Góry Stołowe,Szczeliniec Wielki,919,"50,4841175; 16,3433970","50,4841175","16,3433970","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-swietokrzyskie,,,,,,,Polska,,Góry Swiętokrzyskie
+RANGE#gory-swietokrzyskie,MOUNT#lysica,CNTRY#polska,MOUNT#00612,REGIO#,MOUNT#00612,RANGE#gory-swietokrzyskie,MOUNT#00612,Polska,,Góry Swiętokrzyskie,Łysica,612,"50,8916037; 20,8967847","50,8916037","20,8967847","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#przedgorze-sudeckie,,,,,,,Polska,Przedgórze Sudeckie
+REGIO#przedgorze-sudeckie,RANGE#masyw-slezy,,,,,,,Polska,Przedgórze Sudeckie,Masyw Ślęży
+RANGE#masyw-slezy,MOUNT#sleza,CNTRY#polska,MOUNT#00718,REGIO#przedgorze-sudeckie,MOUNT#00718,RANGE#masyw-slezy,MOUNT#00718,Polska,Przedgórze Sudeckie,Masyw Ślęży,Ślęża,718,"50,8650326; 16,7086150","50,8650326","16,7086150","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#tatry,,,,,,,Polska,,Tatry
+RANGE#tatry,MOUNT#rysy,CNTRY#polska,MOUNT#02499,REGIO#,MOUNT#02499,RANGE#tatry,MOUNT#02499,Polska,,Tatry,Rysy,2499,"49,1795480; 20,0880640","49,1795480","20,0880640","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#sudety-zachodnie,,,,,,,Polska,Sudety Zachodnie
+REGIO#sudety-zachodnie,RANGE#gory-izerskie,,,,,,,Polska,Sudety Zachodnie,Góry Izerskie
+RANGE#gory-izerskie,MOUNT#wysoka-kopa,CNTRY#polska,MOUNT#01126,REGIO#sudety-zachodnie,MOUNT#01126,RANGE#gory-izerskie,MOUNT#01126,Polska,Sudety Zachodnie,Góry Izerskie,Wysoka Kopa,1126,"50,8500000; 15,4194444","50,8500000","15,4194444","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#sudety-zachodnie,,,,,,,Polska,Sudety Zachodnie
+REGIO#sudety-zachodnie,RANGE#karkonosze,,,,,,,Polska,Sudety Zachodnie,Karkonosze
+RANGE#karkonosze,MOUNT#sniezka,CNTRY#polska,MOUNT#01603,REGIO#sudety-zachodnie,MOUNT#01603,RANGE#karkonosze,MOUNT#01603,Polska,Sudety Zachodnie,Karkonosze,Śnieżka,1603,"50,7360171; 15,7399457","50,7360171","15,7399457","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#sudety-zachodnie,,,,,,,Polska,Sudety Zachodnie
+REGIO#sudety-zachodnie,RANGE#gory-kaczawskie,,,,,,,Polska,Sudety Zachodnie,Góry Kaczawskie
+RANGE#gory-kaczawskie,MOUNT#skopiec,CNTRY#polska,MOUNT#00724,REGIO#sudety-zachodnie,MOUNT#00724,RANGE#gory-kaczawskie,MOUNT#00724,Polska,Sudety Zachodnie,Góry Kaczawskie,Skopiec,724,"50,9444098; 15,8849806","50,9444098","15,8849806","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#sudety-zachodnie,,,,,,,Polska,Sudety Zachodnie
+REGIO#sudety-zachodnie,RANGE#rudawy-janowickie,,,,,,,Polska,Sudety Zachodnie,Rudawy Janowickie
+RANGE#rudawy-janowickie,MOUNT#skalnik,CNTRY#polska,MOUNT#00945,REGIO#sudety-zachodnie,MOUNT#00945,RANGE#rudawy-janowickie,MOUNT#00945,Polska,Sudety Zachodnie,Rudawy Janowickie,Skalnik,945,"50,8083333; 15,9013887","50,8083333","15,9013887","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-walbrzyskie,,,,,,,Polska,,Góry Wałbrzyskie
+RANGE#gory-walbrzyskie,MOUNT#chelmiec,CNTRY#polska,MOUNT#00850,REGIO#,MOUNT#00850,RANGE#gory-walbrzyskie,MOUNT#00850,Polska,,Góry Wałbrzyskie,Chełmiec,850,"50,7797222; 16,2119445","50,7797222","16,2119445","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#sudety-srodkowe,,,,,,,Polska,Sudety Środkowe
+REGIO#sudety-srodkowe,RANGE#gory-kamienne,,,,,,,Polska,Sudety Środkowe,Góry Kamienne
+RANGE#gory-kamienne,MOUNT#waligora,CNTRY#polska,MOUNT#00936,REGIO#sudety-srodkowe,MOUNT#00936,RANGE#gory-kamienne,MOUNT#00936,Polska,Sudety Środkowe,Góry Kamienne,Waligóra,936,"50,6807508; 16,2780768","50,6807508","16,2780768","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#sudety-srodkowe,,,,,,,Polska,Sudety Środkowe
+REGIO#sudety-srodkowe,RANGE#gory-sowie,,,,,,,Polska,Sudety Środkowe,Góry Sowie
+RANGE#gory-sowie,MOUNT#wielka-sowa,CNTRY#polska,MOUNT#01015,REGIO#sudety-srodkowe,MOUNT#01015,RANGE#gory-sowie,MOUNT#01015,Polska,Sudety Środkowe,Góry Sowie,Wielka Sowa,1015,"50,6803449; 16,4854977","50,6803449","16,4854977","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-orlickie,,,,,,,Polska,,Góry Orlickie
+RANGE#gory-orlickie,MOUNT#orlica,CNTRY#polska,MOUNT#01084,REGIO#,MOUNT#01084,RANGE#gory-orlickie,MOUNT#01084,Polska,,Góry Orlickie,Orlica,1084,"50,3500000; 16,3500000","50,3500000","16,3500000","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#sudety-srodkowe,,,,,,,Polska,Sudety Środkowe
+REGIO#sudety-srodkowe,RANGE#gory-bardzkie,,,,,,,Polska,Sudety Środkowe,Góry Bardzkie
+RANGE#gory-bardzkie,MOUNT#klodzka-gora,CNTRY#polska,MOUNT#00765,REGIO#sudety-srodkowe,MOUNT#00765,RANGE#gory-bardzkie,MOUNT#00765,Polska,Sudety Środkowe,Góry Bardzkie,Kłodzka Góra,765,"50,4516525; 16,7532116","50,4516525","16,7532116","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#sudety-srodkowe,,,,,,,Polska,Sudety Środkowe
+REGIO#sudety-srodkowe,RANGE#gory-bystrzyckie,,,,,,,Polska,Sudety Środkowe,Góry Bystrzyckie
+RANGE#gory-bystrzyckie,MOUNT#jagodna,CNTRY#polska,MOUNT#00977,REGIO#sudety-srodkowe,MOUNT#00977,RANGE#gory-bystrzyckie,MOUNT#00977,Polska,Sudety Środkowe,Góry Bystrzyckie,Jagodna,977,"50,2527777; 16,5666666","50,2527777","16,5666666","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#sudety-wschodnie,,,,,,,Polska,Sudety Wschodnie
+REGIO#sudety-wschodnie,RANGE#masyw-snieznika,,,,,,,Polska,Sudety Wschodnie,Masyw Śnieżnika
+RANGE#masyw-snieznika,MOUNT#snieznik,CNTRY#polska,MOUNT#01425,REGIO#sudety-wschodnie,MOUNT#01425,RANGE#masyw-snieznika,MOUNT#01425,Polska,Sudety Wschodnie,Masyw Śnieżnika,Śnieżnik,1425,"50,2075190; 16,8473626","50,2075190","16,8473626","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-zlote,,,,,,,Polska,,Góry Złote
+RANGE#gory-zlote,MOUNT#kowadlo,CNTRY#polska,MOUNT#00989,REGIO#,MOUNT#00989,RANGE#gory-zlote,MOUNT#00989,Polska,,Góry Złote,Kowadło,989,"50,2638888; 17,0138888","50,2638888","17,0138888","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-bialskie,,,,,,,Polska,,Góry Bialskie
+RANGE#gory-bialskie,MOUNT#rudawiec,CNTRY#polska,MOUNT#01112,REGIO#,MOUNT#01112,RANGE#gory-bialskie,MOUNT#01112,Polska,,Góry Bialskie,Rudawiec,1112,"50,244770; 16,976879","50,244770","16,976879","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-opawskie,,,,,,,Polska,,Góry Opawskie
+RANGE#gory-opawskie,MOUNT#biskupia-kopa,CNTRY#polska,MOUNT#00889,REGIO#,MOUNT#00889,RANGE#gory-opawskie,MOUNT#00889,Polska,,Góry Opawskie,Biskupia Kopa,889,"50,2566847; 17,4287677","50,2566847","17,4287677","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-slaski,,,,,,,Polska,,Beskid Śląski
+RANGE#beskid-slaski,MOUNT#skrzyczne,CNTRY#polska,MOUNT#01257,REGIO#,MOUNT#01257,RANGE#beskid-slaski,MOUNT#01257,Polska,,Beskid Śląski,Skrzyczne,1257,"49,6844492; 19,0301620","49,6844492","19,0301620","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-maly,,,,,,,Polska,,Beskid Mały
+RANGE#beskid-maly,MOUNT#czupel,CNTRY#polska,MOUNT#00933,REGIO#,MOUNT#00933,RANGE#beskid-maly,MOUNT#00933,Polska,,Beskid Mały,Czupel,933,"49,7661048; 19,1552773","49,7661048","19,1552773","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-zywiecki,,,,,,,Polska,,Beskid Żywiecki
+RANGE#beskid-zywiecki,MOUNT#babia-gora,CNTRY#polska,MOUNT#01725,REGIO#,MOUNT#01725,RANGE#beskid-zywiecki,MOUNT#01725,Polska,,Beskid Żywiecki,Babia Góra,1725,"49,5731628; 19,5307964","49,5731628","19,5307964","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-makowski,,,,,,,Polska,,Beskid Makowski
+RANGE#beskid-makowski,MOUNT#lubomir,CNTRY#polska,MOUNT#00912,REGIO#,MOUNT#00912,RANGE#beskid-makowski,MOUNT#00912,Polska,,Beskid Makowski,Lubomir,912,"49,7666666; 20,0625000","49,7666666","20,0625000","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-wyspowy,,,,,,,Polska,,Beskid Wyspowy
+RANGE#beskid-wyspowy,MOUNT#mogielica,CNTRY#polska,MOUNT#01173,REGIO#,MOUNT#01173,RANGE#beskid-wyspowy,MOUNT#01173,Polska,,Beskid Wyspowy,Mogielica,1173,"49,6552305; 20,2768336","49,6552305","20,2768336","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gorce,,,,,,,Polska,,Gorce
+RANGE#gorce,MOUNT#turbacz,CNTRY#polska,MOUNT#01310,REGIO#,MOUNT#01310,RANGE#gorce,MOUNT#01310,Polska,,Gorce,Turbacz,1310,"49,5429179; 20,1113448","49,5429179","20,1113448","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#pieniny,,,,,,,Polska,,Pieniny
+RANGE#pieniny,MOUNT#wysoka,CNTRY#polska,MOUNT#01050,REGIO#,MOUNT#01050,RANGE#pieniny,MOUNT#01050,Polska,,Pieniny,Wysoka,1050,"49,3806755; 20,5555165","49,3806755","20,5555165","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-sadecki,,,,,,,Polska,,Beskid Sądecki
+RANGE#beskid-sadecki,MOUNT#radziejowa,CNTRY#polska,MOUNT#01262,REGIO#,MOUNT#01262,RANGE#beskid-sadecki,MOUNT#01262,Polska,,Beskid Sądecki,Radziejowa,1262,"49,4493407; 20,6041314","49,4493407","20,6041314","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-niski,,,,,,,Polska,,Beskid Niski
+RANGE#beskid-niski,MOUNT#lackowa,CNTRY#polska,MOUNT#00997,REGIO#,MOUNT#00997,RANGE#beskid-niski,MOUNT#00997,Polska,,Beskid Niski,Lackowa,997,"49,4293982; 21,0963678","49,4293982","21,0963678","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#bieszczady,,,,,,,Polska,,Bieszczady
+RANGE#bieszczady,MOUNT#tarnica,CNTRY#polska,MOUNT#01346,REGIO#,MOUNT#01346,RANGE#bieszczady,MOUNT#01346,Polska,,Bieszczady,Tarnica,1346,"49,0745547; 22,7262497","49,0745547","22,7262497","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#bledne-skaly,CNTRY#polska,MOUNT#00853,REGIO#,MOUNT#00853,RANGE#gory-stolowe,MOUNT#00853,Polska,,Góry Stołowe,Błędne Skały,853,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#naroznik,CNTRY#polska,MOUNT#00849,REGIO#,MOUNT#00849,RANGE#gory-stolowe,MOUNT#00849,Polska,,Góry Stołowe,Narożnik,849,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#ptak,CNTRY#polska,MOUNT#00839,REGIO#,MOUNT#00839,RANGE#gory-stolowe,MOUNT#00839,Polska,,Góry Stołowe,Ptak,839,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#kopa-smierci,CNTRY#polska,MOUNT#00830,REGIO#,MOUNT#00830,RANGE#gory-stolowe,MOUNT#00830,Polska,,Góry Stołowe,Kopa Śmierci,830,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#podmorskie-kanaly,CNTRY#polska,MOUNT#00792,REGIO#,MOUNT#00792,RANGE#gory-stolowe,MOUNT#00792,Polska,,Góry Stołowe,Podmorskie kanały,792,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#cap,CNTRY#polska,MOUNT#00786,REGIO#,MOUNT#00786,RANGE#gory-stolowe,MOUNT#00786,Polska,,Góry Stołowe,Čáp,786,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#bozanovsky-spicak,CNTRY#polska,MOUNT#00773,REGIO#,MOUNT#00773,RANGE#gory-stolowe,MOUNT#00773,Polska,,Góry Stołowe,Božanovský špičák,773,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#koruna,CNTRY#polska,MOUNT#00769,REGIO#,MOUNT#00769,RANGE#gory-stolowe,MOUNT#00769,Polska,,Góry Stołowe,Koruna,769,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#krucza-kopa,CNTRY#polska,MOUNT#00723,REGIO#,MOUNT#00723,RANGE#gory-stolowe,MOUNT#00723,Polska,,Góry Stołowe,Krucza Kopa,723,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#rog,CNTRY#polska,MOUNT#00715,REGIO#,MOUNT#00715,RANGE#gory-stolowe,MOUNT#00715,Polska,,Góry Stołowe,Róg,715,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#velka-kupa,CNTRY#polska,MOUNT#00708,REGIO#,MOUNT#00708,RANGE#gory-stolowe,MOUNT#00708,Polska,,Góry Stołowe,Velká Kupa,708,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#rogacz,CNTRY#polska,MOUNT#00708,REGIO#,MOUNT#00708,RANGE#gory-stolowe,MOUNT#00708,Polska,,Góry Stołowe,Rogacz,708,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#dzik,CNTRY#polska,MOUNT#00703,REGIO#,MOUNT#00703,RANGE#gory-stolowe,MOUNT#00703,Polska,,Góry Stołowe,Dzik,703,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#supi-hnizdo,CNTRY#polska,MOUNT#00702,REGIO#,MOUNT#00702,RANGE#gory-stolowe,MOUNT#00702,Polska,,Góry Stołowe,Supí hnízdo,702,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#ostas,CNTRY#polska,MOUNT#00700,REGIO#,MOUNT#00700,RANGE#gory-stolowe,MOUNT#00700,Polska,,Góry Stołowe,Ostaš,700,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#urwisko-batorowskie,CNTRY#polska,MOUNT#00700,REGIO#,MOUNT#00700,RANGE#gory-stolowe,MOUNT#00700,Polska,,Góry Stołowe,Urwisko Batorowskie,700,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#baszty,CNTRY#polska,MOUNT#00700,REGIO#,MOUNT#00700,RANGE#gory-stolowe,MOUNT#00700,Polska,,Góry Stołowe,Baszty,700,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#strazna-hora,CNTRY#polska,MOUNT#00689,REGIO#,MOUNT#00689,RANGE#gory-stolowe,MOUNT#00689,Polska,,Góry Stołowe,Stražna hora,689,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#modry-kamen,CNTRY#polska,MOUNT#00686,REGIO#,MOUNT#00686,RANGE#gory-stolowe,MOUNT#00686,Polska,,Góry Stołowe,Modry Kamen,686,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#starozamecky-vrch,CNTRY#polska,MOUNT#00681,REGIO#,MOUNT#00681,RANGE#gory-stolowe,MOUNT#00681,Polska,,Góry Stołowe,Starozámecký vrch,681,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#krizowy-vrch,CNTRY#polska,MOUNT#00667,REGIO#,MOUNT#00667,RANGE#gory-stolowe,MOUNT#00667,Polska,,Góry Stołowe,Krizowy Vrch,667,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#duza-dufalka,CNTRY#polska,MOUNT#00622,REGIO#,MOUNT#00622,RANGE#gory-stolowe,MOUNT#00622,Polska,,Góry Stołowe,Duża Dufałka,622,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#lysy-vrch,CNTRY#polska,MOUNT#00611,REGIO#,MOUNT#00611,RANGE#gory-stolowe,MOUNT#00611,Polska,,Góry Stołowe,Lysý vrch,611,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-slaski,,,,,,,Polska,,Beskid Śląski
+RANGE#beskid-slaski,MOUNT#wielka-czantoria,CNTRY#polska,MOUNT#00995,REGIO#,MOUNT#00995,RANGE#beskid-slaski,MOUNT#00995,Polska,,Beskid Śląski,Wielka Czantoria,995,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-slaski,,,,,,,Polska,,Beskid Śląski
+RANGE#beskid-slaski,MOUNT#klimczok,CNTRY#polska,MOUNT#01117,REGIO#,MOUNT#01117,RANGE#beskid-slaski,MOUNT#01117,Polska,,Beskid Śląski,Klimczok,1117,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-maly,,,,,,,Polska,,Beskid Mały
+RANGE#beskid-maly,MOUNT#lamana-skala,CNTRY#polska,MOUNT#00929,REGIO#,MOUNT#00929,RANGE#beskid-maly,MOUNT#00929,Polska,,Beskid Mały,Łamana Skała,929,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-zywiecki,,,,,,,Polska,,Beskid Żywiecki
+RANGE#beskid-zywiecki,MOUNT#wielka-racza,CNTRY#polska,MOUNT#01236,REGIO#,MOUNT#01236,RANGE#beskid-zywiecki,MOUNT#01236,Polska,,Beskid Żywiecki,Wielka Racza,1236,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': True}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-zywiecki,,,,,,,Polska,,Beskid Żywiecki
+RANGE#beskid-zywiecki,MOUNT#pilsko,CNTRY#polska,MOUNT#01542,REGIO#,MOUNT#01542,RANGE#beskid-zywiecki,MOUNT#01542,Polska,,Beskid Żywiecki,Pilsko,1542,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-zywiecki,,,,,,,Polska,,Beskid Żywiecki
+RANGE#beskid-zywiecki,MOUNT#jalowiec,CNTRY#polska,MOUNT#01111,REGIO#,MOUNT#01111,RANGE#beskid-zywiecki,MOUNT#01111,Polska,,Beskid Żywiecki,Jałowiec,1111,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-zywiecki,,,,,,,Polska,,Beskid Żywiecki
+RANGE#beskid-zywiecki,MOUNT#polica,CNTRY#polska,MOUNT#01369,REGIO#,MOUNT#01369,RANGE#beskid-zywiecki,MOUNT#01369,Polska,,Beskid Żywiecki,Polica,1369,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-zywiecki,,,,,,,Polska,,Beskid Żywiecki
+RANGE#beskid-zywiecki,MOUNT#bukowinski-wierch,CNTRY#polska,MOUNT#00940,REGIO#,MOUNT#00940,RANGE#beskid-zywiecki,MOUNT#00940,Polska,,Beskid Żywiecki,Bukowiński Wierch,940,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-makowski,,,,,,,Polska,,Beskid Makowski
+RANGE#beskid-makowski,MOUNT#lasek,CNTRY#polska,MOUNT#00868,REGIO#,MOUNT#00868,RANGE#beskid-makowski,MOUNT#00868,Polska,,Beskid Makowski,Lasek,868,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-makowski,,,,,,,Polska,,Beskid Makowski
+RANGE#beskid-makowski,MOUNT#babica,CNTRY#polska,MOUNT#00728,REGIO#,MOUNT#00728,RANGE#beskid-makowski,MOUNT#00728,Polska,,Beskid Makowski,Babica,728,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-makowski,,,,,,,Polska,,Beskid Makowski
+RANGE#beskid-makowski,MOUNT#koskowa-gora,CNTRY#polska,MOUNT#00867,REGIO#,MOUNT#00867,RANGE#beskid-makowski,MOUNT#00867,Polska,,Beskid Makowski,Koskowa Góra,867,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-wyspowy,,,,,,,Polska,,Beskid Wyspowy
+RANGE#beskid-wyspowy,MOUNT#lubon-wielki,CNTRY#polska,MOUNT#01022,REGIO#,MOUNT#01022,RANGE#beskid-wyspowy,MOUNT#01022,Polska,,Beskid Wyspowy,Luboń Wielki,1022,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-wyspowy,,,,,,,Polska,,Beskid Wyspowy
+RANGE#beskid-wyspowy,MOUNT#cwilin,CNTRY#polska,MOUNT#01072,REGIO#,MOUNT#01072,RANGE#beskid-wyspowy,MOUNT#01072,Polska,,Beskid Wyspowy,Cwilin,1072,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-wyspowy,,,,,,,Polska,,Beskid Wyspowy
+RANGE#beskid-wyspowy,MOUNT#modyn,CNTRY#polska,MOUNT#01029,REGIO#,MOUNT#01029,RANGE#beskid-wyspowy,MOUNT#01029,Polska,,Beskid Wyspowy,Modyń,1029,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-wyspowy,,,,,,,Polska,,Beskid Wyspowy
+RANGE#beskid-wyspowy,MOUNT#jaworz,CNTRY#polska,MOUNT#00921,REGIO#,MOUNT#00921,RANGE#beskid-wyspowy,MOUNT#00921,Polska,,Beskid Wyspowy,Jaworz,921,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gorce,,,,,,,Polska,,Gorce
+RANGE#gorce,MOUNT#luban,CNTRY#polska,MOUNT#01225,REGIO#,MOUNT#01225,RANGE#gorce,MOUNT#01225,Polska,,Gorce,Lubań,1225,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-sadecki,,,,,,,Polska,,Beskid Sądecki
+RANGE#beskid-sadecki,MOUNT#jaworzyna-krynicka,CNTRY#polska,MOUNT#01116,REGIO#,MOUNT#01116,RANGE#beskid-sadecki,MOUNT#01116,Polska,,Beskid Sądecki,Jaworzyna Krynicka,1116,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-sadecki,,,,,,,Polska,,Beskid Sądecki
+RANGE#beskid-sadecki,MOUNT#kraczonik,CNTRY#polska,MOUNT#00934,REGIO#,MOUNT#00934,RANGE#beskid-sadecki,MOUNT#00934,Polska,,Beskid Sądecki,Kraczonik,934,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-niski,,,,,,,Polska,,Beskid Niski
+RANGE#beskid-niski,MOUNT#jaworze,CNTRY#polska,MOUNT#00882,REGIO#,MOUNT#00882,RANGE#beskid-niski,MOUNT#00882,Polska,,Beskid Niski,Jaworze,882,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-niski,,,,,,,Polska,,Beskid Niski
+RANGE#beskid-niski,MOUNT#watkowa,CNTRY#polska,MOUNT#00846,REGIO#,MOUNT#00846,RANGE#beskid-niski,MOUNT#00846,Polska,,Beskid Niski,Wątkowa,846,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-niski,,,,,,,Polska,,Beskid Niski
+RANGE#beskid-niski,MOUNT#baranie,CNTRY#polska,MOUNT#00754,REGIO#,MOUNT#00754,RANGE#beskid-niski,MOUNT#00754,Polska,,Beskid Niski,Baranie,754,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-niski,,,,,,,Polska,,Beskid Niski
+RANGE#beskid-niski,MOUNT#kamien,CNTRY#polska,MOUNT#00857,REGIO#,MOUNT#00857,RANGE#beskid-niski,MOUNT#00857,Polska,,Beskid Niski,Kamień,857,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#beskid-niski,,,,,,,Polska,,Beskid Niski
+RANGE#beskid-niski,MOUNT#tokarnia,CNTRY#polska,MOUNT#00778,REGIO#,MOUNT#00778,RANGE#beskid-niski,MOUNT#00778,Polska,,Beskid Niski,Tokarnia,778,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#pieniny,,,,,,,Polska,,Pieniny
+RANGE#pieniny,MOUNT#zar,CNTRY#polska,MOUNT#00883,REGIO#,MOUNT#00883,RANGE#pieniny,MOUNT#00883,Polska,,Pieniny,Żar,883,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#pieniny,,,,,,,Polska,,Pieniny
+RANGE#pieniny,MOUNT#trzy-korony,CNTRY#polska,MOUNT#00882,REGIO#,MOUNT#00882,RANGE#pieniny,MOUNT#00882,Polska,,Pieniny,Trzy Korony,882,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#tatry-zachodnie,,,,,,,Polska,,Tatry Zachodnie
+RANGE#tatry-zachodnie,MOUNT#starobocianski-wierch,CNTRY#polska,MOUNT#02176,REGIO#,MOUNT#02176,RANGE#tatry-zachodnie,MOUNT#02176,Polska,,Tatry Zachodnie,Starobociański Wierch,2176,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#tatry-zachodnie,,,,,,,Polska,,Tatry Zachodnie
+RANGE#tatry-zachodnie,MOUNT#krzesanica,CNTRY#polska,MOUNT#02122,REGIO#,MOUNT#02122,RANGE#tatry-zachodnie,MOUNT#02122,Polska,,Tatry Zachodnie,Krzesanica,2122,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#tatry-wschodnie,,,,,,,Polska,,Tatry Wschodnie
+RANGE#tatry-wschodnie,MOUNT#swinica,CNTRY#polska,MOUNT#02301,REGIO#,MOUNT#02301,RANGE#tatry-wschodnie,MOUNT#02301,Polska,,Tatry Wschodnie,Świnica,2301,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-sanocko-turczanskie,,,,,,,Polska,,Góry Sanocko-Turczańskie
+RANGE#gory-sanocko-turczanskie,MOUNT#slonny-pn-zach,CNTRY#polska,MOUNT#00668,REGIO#,MOUNT#00668,RANGE#gory-sanocko-turczanskie,MOUNT#00668,Polska,,Góry Sanocko-Turczańskie,Słonny pn.-zach.,668,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-sanocko-turczanskie,,,,,,,Polska,,Góry Sanocko-Turczańskie
+RANGE#gory-sanocko-turczanskie,MOUNT#slonny-pld-zach,CNTRY#polska,MOUNT#00668,REGIO#,MOUNT#00668,RANGE#gory-sanocko-turczanskie,MOUNT#00668,Polska,,Góry Sanocko-Turczańskie,Słonny płd.-zach,668,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-sanocko-turczanskie,,,,,,,Polska,,Góry Sanocko-Turczańskie
+RANGE#gory-sanocko-turczanskie,MOUNT#jaworniki,CNTRY#polska,MOUNT#00908,REGIO#,MOUNT#00908,RANGE#gory-sanocko-turczanskie,MOUNT#00908,Polska,,Góry Sanocko-Turczańskie,Jaworniki,908,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#bieszczady,,,,,,,Polska,,Bieszczady
+RANGE#bieszczady,MOUNT#trohaniec,CNTRY#polska,MOUNT#00939,REGIO#,MOUNT#00939,RANGE#bieszczady,MOUNT#00939,Polska,,Bieszczady,Trohaniec,939,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#bieszczady,,,,,,,Polska,,Bieszczady
+RANGE#bieszczady,MOUNT#lopiennik,CNTRY#polska,MOUNT#01069,REGIO#,MOUNT#01069,RANGE#bieszczady,MOUNT#01069,Polska,,Bieszczady,Łopiennik,1069,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#bieszczady,,,,,,,Polska,,Bieszczady
+RANGE#bieszczady,MOUNT#wolosan,CNTRY#polska,MOUNT#01071,REGIO#,MOUNT#01071,RANGE#bieszczady,MOUNT#01071,Polska,,Bieszczady,Wołosań,1071,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#bieszczady,,,,,,,Polska,,Bieszczady
+RANGE#bieszczady,MOUNT#wielka-rawka,CNTRY#polska,MOUNT#01307,REGIO#,MOUNT#01307,RANGE#bieszczady,MOUNT#01307,Polska,,Bieszczady,Wielka Rawka,1307,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#karkonosze,,,,,,,Polska,,Karkonosze
+RANGE#karkonosze,MOUNT#skalny-stol,CNTRY#polska,MOUNT#01282,REGIO#,MOUNT#01282,RANGE#karkonosze,MOUNT#01282,Polska,,Karkonosze,Skalny Stół,1282,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#karkonosze,,,,,,,Polska,,Karkonosze
+RANGE#karkonosze,MOUNT#lysocina,CNTRY#polska,MOUNT#01189,REGIO#,MOUNT#01189,RANGE#karkonosze,MOUNT#01189,Polska,,Karkonosze,Łysocina,1189,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-kaczawskie,,,,,,,Polska,,Góry Kaczawskie
+RANGE#gory-kaczawskie,MOUNT#okole,CNTRY#polska,MOUNT#00721,REGIO#,MOUNT#00721,RANGE#gory-kaczawskie,MOUNT#00721,Polska,,Góry Kaczawskie,Okole,721,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-kaczawskie,,,,,,,Polska,,Góry Kaczawskie
+RANGE#gory-kaczawskie,MOUNT#maslak,CNTRY#polska,MOUNT#00720,REGIO#,MOUNT#00720,RANGE#gory-kaczawskie,MOUNT#00720,Polska,,Góry Kaczawskie,Maślak,720,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-kaczawskie,,,,,,,Polska,,Góry Kaczawskie
+RANGE#gory-kaczawskie,MOUNT#baraniec,CNTRY#polska,MOUNT#00723,REGIO#,MOUNT#00723,RANGE#gory-kaczawskie,MOUNT#00723,Polska,,Góry Kaczawskie,Baraniec,723,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-kaczawskie,,,,,,,Polska,,Góry Kaczawskie
+RANGE#gory-kaczawskie,MOUNT#poreba,CNTRY#polska,MOUNT#00671,REGIO#,MOUNT#00671,RANGE#gory-kaczawskie,MOUNT#00671,Polska,,Góry Kaczawskie,Poręba,671,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#rudawy-janowickie,,,,,,,Polska,,Rudawy Janowickie
+RANGE#rudawy-janowickie,MOUNT#krzyzna-gora,CNTRY#polska,MOUNT#00654,REGIO#,MOUNT#00654,RANGE#rudawy-janowickie,MOUNT#00654,Polska,,Rudawy Janowickie,Krzyżna Góra,654,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-walbrzyskie,,,,,,,Polska,,Góry Wałbrzyskie
+RANGE#gory-walbrzyskie,MOUNT#trojgarb,CNTRY#polska,MOUNT#00778,REGIO#,MOUNT#00778,RANGE#gory-walbrzyskie,MOUNT#00778,Polska,,Góry Wałbrzyskie,Trójgarb,778,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#sudety-srodkowe,,,,,,,Polska,Sudety Środkowe
+REGIO#sudety-srodkowe,RANGE#gory-walbrzyskie,,,,,,,Polska,Sudety Środkowe,Góry Wałbrzyskie
+RANGE#gory-walbrzyskie,MOUNT#borowa,CNTRY#polska,MOUNT#00853,REGIO#sudety-srodkowe,MOUNT#00853,RANGE#gory-walbrzyskie,MOUNT#00853,Polska,Sudety Środkowe,Góry Wałbrzyskie,Borowa,853,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-kamienne,,,,,,,Polska,,Góry Kamienne
+RANGE#gory-kamienne,MOUNT#lesista-wielka,CNTRY#polska,MOUNT#00851,REGIO#,MOUNT#00851,RANGE#gory-kamienne,MOUNT#00851,Polska,,Góry Kamienne,Lesista Wielka,851,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-kamienne,,,,,,,Polska,,Góry Kamienne
+RANGE#gory-kamienne,MOUNT#szeroka,CNTRY#polska,MOUNT#00842,REGIO#,MOUNT#00842,RANGE#gory-kamienne,MOUNT#00842,Polska,,Góry Kamienne,Szeroka,842,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-jastrzebie,,,,,,,Polska,,Góry Jastrzębie
+RANGE#gory-jastrzebie,MOUNT#janski-wierch,CNTRY#polska,MOUNT#00697,REGIO#,MOUNT#00697,RANGE#gory-jastrzebie,MOUNT#00697,Polska,,Góry Jastrzębie,Jański Wierch,697,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-stolowe,,,,,,,Polska,,Góry Stołowe
+RANGE#gory-stolowe,MOUNT#rog,CNTRY#polska,MOUNT#00715,REGIO#,MOUNT#00715,RANGE#gory-stolowe,MOUNT#00715,Polska,,Góry Stołowe,Róg,715,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#sudety-srodkowe,,,,,,,Polska,Sudety Środkowe
+REGIO#sudety-srodkowe,RANGE#gory-bystrzyckie,,,,,,,Polska,Sudety Środkowe,Góry Bystrzyckie
+RANGE#gory-bystrzyckie,MOUNT#jagodna-pln,CNTRY#polska,MOUNT#00980,REGIO#sudety-srodkowe,MOUNT#00980,RANGE#gory-bystrzyckie,MOUNT#00980,Polska,Sudety Środkowe,Góry Bystrzyckie,Jagodna Płn.,980,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-sowie,,,,,,,Polska,,Góry Sowie
+RANGE#gory-sowie,MOUNT#wlodarz,CNTRY#polska,MOUNT#00811,REGIO#,MOUNT#00811,RANGE#gory-sowie,MOUNT#00811,Polska,,Góry Sowie,Włodarz,811,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-bardzkie,,,,,,,Polska,,Góry Bardzkie
+RANGE#gory-bardzkie,MOUNT#szeroka-gora,CNTRY#polska,MOUNT#00770,REGIO#,MOUNT#00770,RANGE#gory-bardzkie,MOUNT#00770,Polska,,Góry Bardzkie,Szeroka Góra,770,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-zlote-i-bialskie,,,,,,,Polska,,Góry Złote i Bialskie
+RANGE#gory-zlote-i-bialskie,MOUNT#postawna,CNTRY#polska,MOUNT#01117,REGIO#,MOUNT#01117,RANGE#gory-zlote-i-bialskie,MOUNT#01117,Polska,,Góry Złote i Bialskie,Postawna,1117,"50,22075; 17,0113056","50,22075","17,0113056","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#masyw-snieznika,,,,,,,Polska,,Masyw Śnieżnika
+RANGE#masyw-snieznika,MOUNT#suchon,CNTRY#polska,MOUNT#00964,REGIO#,MOUNT#00964,RANGE#masyw-snieznika,MOUNT#00964,Polska,,Masyw Śnieżnika,Suchoń,964,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#karkonosze,,,,,,,Polska,,Karkonosze
+RANGE#karkonosze,MOUNT#wielki-szyszak,CNTRY#polska,MOUNT#01509,REGIO#,MOUNT#01509,RANGE#karkonosze,MOUNT#01509,Polska,,Karkonosze,Wielki Szyszak,1509,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-zlote,,,,,,,Polska,,Góry Złote
+RANGE#gory-zlote,MOUNT#jawornik-wielki,CNTRY#polska,MOUNT#00872,REGIO#,MOUNT#00872,RANGE#gory-zlote,MOUNT#00872,Polska,,Góry Złote,Jawornik Wielki,872,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-zlote,,,,,,,Polska,,Góry Złote
+RANGE#gory-zlote,MOUNT#borowkowa,CNTRY#polska,MOUNT#00900,REGIO#,MOUNT#00900,RANGE#gory-zlote,MOUNT#00900,Polska,,Góry Złote,Borówkowa,900,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-kamienne,,,,,,,Polska,,Góry Kamienne
+RANGE#gory-kamienne,MOUNT#stozek-wielki,CNTRY#polska,MOUNT#00841,REGIO#,MOUNT#00841,RANGE#gory-kamienne,MOUNT#00841,Polska,,Góry Kamienne,Stożek Wielki,841,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-izerskie,,,,,,,Polska,,Góry Izerskie
+RANGE#gory-izerskie,MOUNT#kamienica,CNTRY#polska,MOUNT#00973,REGIO#,MOUNT#00973,RANGE#gory-izerskie,MOUNT#00973,Polska,,Góry Izerskie,Kamienica,973,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-bystrzyckie,,,,,,,Polska,,Góry Bystrzyckie
+RANGE#gory-bystrzyckie,MOUNT#czerniec,CNTRY#polska,MOUNT#00891,REGIO#,MOUNT#00891,RANGE#gory-bystrzyckie,MOUNT#00891,Polska,,Góry Bystrzyckie,Czerniec,891,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#masyw-slezy,,,,,,,Polska,,Masyw Ślęży
+RANGE#masyw-slezy,MOUNT#radunia,CNTRY#polska,MOUNT#00573,REGIO#,MOUNT#00573,RANGE#masyw-slezy,MOUNT#00573,Polska,,Masyw Ślęży,Radunia,573,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-walbrzyskie,,,,,,,Polska,,Góry Wałbrzyskie
+RANGE#gory-walbrzyskie,MOUNT#kreglak,CNTRY#polska,MOUNT#00692,REGIO#,MOUNT#00692,RANGE#gory-walbrzyskie,MOUNT#00692,Polska,,Góry Wałbrzyskie,Kręglak,692,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-zlote,,,,,,,Polska,,Góry Złote
+RANGE#gory-zlote,MOUNT#kobyla-kopa,CNTRY#polska,MOUNT#00860,REGIO#,MOUNT#00860,RANGE#gory-zlote,MOUNT#00860,Polska,,Góry Złote,Kobyla Kopa,860,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-bardzkie,,,,,,,Polska,,Góry Bardzkie
+RANGE#gory-bardzkie,MOUNT#gora-wszystkich-swietych,CNTRY#polska,MOUNT#00648,REGIO#,MOUNT#00648,RANGE#gory-bardzkie,MOUNT#00648,Polska,,Góry Bardzkie,Góra Wszystkich Świętych,648,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-kamienne,,,,,,,Polska,,Góry Kamienne
+RANGE#gory-kamienne,MOUNT#swieta-gora-lubawska,CNTRY#polska,MOUNT#00701,REGIO#,MOUNT#00701,RANGE#gory-kamienne,MOUNT#00701,Polska,,Góry Kamienne,Święta Góra Lubawska,701,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-sowie,,,,,,,Polska,,Góry Sowie
+RANGE#gory-sowie,MOUNT#kalenica,CNTRY#polska,MOUNT#00964,REGIO#,MOUNT#00964,RANGE#gory-sowie,MOUNT#00964,Polska,,Góry Sowie,Kalenica,964,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#sudety-zachodnie,,,,,,,Polska,Sudety Zachodnie
+REGIO#sudety-zachodnie,RANGE#gory-luzyckie,,,,,,,Polska,Sudety Zachodnie,Góry Łużyckie
+RANGE#gory-luzyckie,MOUNT#luz,CNTRY#polska,MOUNT#00793,REGIO#sudety-zachodnie,MOUNT#00793,RANGE#gory-luzyckie,MOUNT#00793,Polska,Sudety Zachodnie,Góry Łużyckie,Luż,793,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#sudety-zachodnie,,,,,,,Polska,Sudety Zachodnie
+REGIO#sudety-zachodnie,RANGE#grzbiet-jesztiedzki,,,,,,,Polska,Sudety Zachodnie,Grzbiet Jesztiedzki
+RANGE#grzbiet-jesztiedzki,MOUNT#jested,CNTRY#polska,MOUNT#01012,REGIO#sudety-zachodnie,MOUNT#01012,RANGE#grzbiet-jesztiedzki,MOUNT#01012,Polska,Sudety Zachodnie,Grzbiet Jesztiedzki,Jested,1012,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#sudety-srodkowe,,,,,,,Polska,Sudety Środkowe
+REGIO#sudety-srodkowe,RANGE#gory-jastrzebie,,,,,,,Polska,Sudety Środkowe,Góry Jastrzębie
+RANGE#gory-jastrzebie,MOUNT#zaltman,CNTRY#polska,MOUNT#00739,REGIO#sudety-srodkowe,MOUNT#00739,RANGE#gory-jastrzebie,MOUNT#00739,Polska,Sudety Środkowe,Góry Jastrzębie,Zaltman,739,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#sudety-srodkowe,,,,,,,Polska,Sudety Środkowe
+REGIO#sudety-srodkowe,RANGE#gory-orlickie,,,,,,,Polska,Sudety Środkowe,Góry Orlickie
+RANGE#gory-orlickie,MOUNT#velka-destna,CNTRY#polska,MOUNT#01115,REGIO#sudety-srodkowe,MOUNT#01115,RANGE#gory-orlickie,MOUNT#01115,Polska,Sudety Środkowe,Góry Orlickie,Velka Destna,1115,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#sudety-wschodnie,,,,,,,Polska,Sudety Wschodnie
+REGIO#sudety-wschodnie,RANGE#gory-zlote-i-bialskie,,,,,,,Polska,Sudety Wschodnie,Góry Złote i Bialskie
+RANGE#gory-zlote-i-bialskie,MOUNT#smrek,CNTRY#polska,MOUNT#01125,REGIO#sudety-wschodnie,MOUNT#01125,RANGE#gory-zlote-i-bialskie,MOUNT#01125,Polska,Sudety Wschodnie,Góry Złote i Bialskie,Smrek,1125,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#sudety-wschodnie,,,,,,,Polska,Sudety Wschodnie
+REGIO#sudety-wschodnie,RANGE#zabrezska-vrchovina,,,,,,,Polska,Sudety Wschodnie,Zabrezska Vrchovina
+RANGE#zabrezska-vrchovina,MOUNT#lazek,CNTRY#polska,MOUNT#00714,REGIO#sudety-wschodnie,MOUNT#00714,RANGE#zabrezska-vrchovina,MOUNT#00714,Polska,Sudety Wschodnie,Zabrezska Vrchovina,Lazek,714,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#sudety-wschodnie,,,,,,,Polska,Sudety Wschodnie
+REGIO#sudety-wschodnie,RANGE#hanusovicka-vrchovina,,,,,,,Polska,Sudety Wschodnie,Hanusovicka Vrchovina
+RANGE#hanusovicka-vrchovina,MOUNT#jerab,CNTRY#polska,MOUNT#01003,REGIO#sudety-wschodnie,MOUNT#01003,RANGE#hanusovicka-vrchovina,MOUNT#01003,Polska,Sudety Wschodnie,Hanusovicka Vrchovina,Jerab,1003,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#sudety-wschodnie,,,,,,,Polska,Sudety Wschodnie
+REGIO#sudety-wschodnie,RANGE#wysoki-jesionik,,,,,,,Polska,Sudety Wschodnie,Wysoki Jesionik
+RANGE#wysoki-jesionik,MOUNT#pradziad,CNTRY#polska,MOUNT#01491,REGIO#sudety-wschodnie,MOUNT#01491,RANGE#wysoki-jesionik,MOUNT#01491,Polska,Sudety Wschodnie,Wysoki Jesionik,Pradziad,1491,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#sudety-wschodnie,,,,,,,Polska,Sudety Wschodnie
+REGIO#sudety-wschodnie,RANGE#gory-opawskie,,,,,,,Polska,Sudety Wschodnie,Góry Opawskie
+RANGE#gory-opawskie,MOUNT#pricny-vrch,CNTRY#polska,MOUNT#00975,REGIO#sudety-wschodnie,MOUNT#00975,RANGE#gory-opawskie,MOUNT#00975,Polska,Sudety Wschodnie,Góry Opawskie,Pricny Vrch,975,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#sudety-wschodnie,,,,,,,Polska,Sudety Wschodnie
+REGIO#sudety-wschodnie,RANGE#niski-jesionik,,,,,,,Polska,Sudety Wschodnie,Niski Jesionik
+RANGE#niski-jesionik,MOUNT#slunecna,CNTRY#polska,MOUNT#00800,REGIO#sudety-wschodnie,MOUNT#00800,RANGE#niski-jesionik,MOUNT#00800,Polska,Sudety Wschodnie,Niski Jesionik,Slunecna,800,,,,"{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-orlickie,,,,,,,Polska,,Góry Orlickie
+RANGE#gory-orlickie,MOUNT#zielony-garb,CNTRY#polska,MOUNT#01026,REGIO#,MOUNT#01026,RANGE#gory-orlickie,MOUNT#01026,Polska,,Góry Orlickie,Zielony Garb,1026,"50,3441111; 16,371","50,3441111","16,371","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#masyw-snieznika,,,,,,,Polska,,Masyw Śnieżnika
+RANGE#masyw-snieznika,MOUNT#czarna-gora,CNTRY#polska,MOUNT#01205,REGIO#,MOUNT#01205,RANGE#masyw-snieznika,MOUNT#01205,Polska,,Masyw Śnieżnika,Czarna Góra,1205,"50,2518056; 16,8050556","50,2518056","16,8050556","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#masyw-snieznika,,,,,,,Polska,,Masyw Śnieżnika
+RANGE#masyw-snieznika,MOUNT#goworek,CNTRY#polska,MOUNT#01320,REGIO#,MOUNT#01320,RANGE#masyw-snieznika,MOUNT#01320,Polska,,Masyw Śnieżnika,Goworek,1320,"50,1884167; 16,8093889","50,1884167","16,8093889","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#masyw-snieznika,,,,,,,Polska,,Masyw Śnieżnika
+RANGE#masyw-snieznika,MOUNT#jaworowa-kopa,CNTRY#polska,MOUNT#01138,REGIO#,MOUNT#01138,RANGE#masyw-snieznika,MOUNT#01138,Polska,,Masyw Śnieżnika,Jaworowa Kopa,1138,"50,2465; 16,8040278","50,2465","16,8040278","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#masyw-snieznika,,,,,,,Polska,,Masyw Śnieżnika
+RANGE#masyw-snieznika,MOUNT#maly-snieznik,CNTRY#polska,MOUNT#01326,REGIO#,MOUNT#01326,RANGE#masyw-snieznika,MOUNT#01326,Polska,,Masyw Śnieżnika,Mały Śnieżnik,1326,"50,1921667; 16,8157778","50,1921667","16,8157778","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#masyw-snieznika,,,,,,,Polska,,Masyw Śnieżnika
+RANGE#masyw-snieznika,MOUNT#puchacz,CNTRY#polska,MOUNT#01175,REGIO#,MOUNT#01175,RANGE#masyw-snieznika,MOUNT#01175,Polska,,Masyw Śnieżnika,Puchacz,1175,"50,1715556; 16,7988611","50,1715556","16,7988611","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#masyw-snieznika,,,,,,,Polska,,Masyw Śnieżnika
+RANGE#masyw-snieznika,MOUNT#sadzonki,CNTRY#polska,MOUNT#01230,REGIO#,MOUNT#01230,RANGE#masyw-snieznika,MOUNT#01230,Polska,,Masyw Śnieżnika,Sadzonki,1230,"50,2014167; 16,8614444","50,2014167","16,8614444","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#masyw-snieznika,,,,,,,Polska,,Masyw Śnieżnika
+RANGE#masyw-snieznika,MOUNT#smrekowiec,CNTRY#polska,MOUNT#01123,REGIO#,MOUNT#01123,RANGE#masyw-snieznika,MOUNT#01123,Polska,,Masyw Śnieżnika,Smrekowiec,1123,"50,2292222; 16,8080556","50,2292222","16,8080556","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#masyw-snieznika,,,,,,,Polska,,Masyw Śnieżnika
+RANGE#masyw-snieznika,MOUNT#stroma,CNTRY#polska,MOUNT#01167,REGIO#,MOUNT#01167,RANGE#masyw-snieznika,MOUNT#01167,Polska,,Masyw Śnieżnika,Stroma,1167,"50,2251944; 16,8516667","50,2251944","16,8516667","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#masyw-snieznika,,,,,,,Polska,,Masyw Śnieżnika
+RANGE#masyw-snieznika,MOUNT#sredniak,CNTRY#polska,MOUNT#01210,REGIO#,MOUNT#01210,RANGE#masyw-snieznika,MOUNT#01210,Polska,,Masyw Śnieżnika,Średniak,1210,"50,2121667; 16,8212778","50,2121667","16,8212778","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#masyw-snieznika,,,,,,,Polska,,Masyw Śnieżnika
+RANGE#masyw-snieznika,MOUNT#trojmorski-wierch,CNTRY#polska,MOUNT#01145,REGIO#,MOUNT#01145,RANGE#masyw-snieznika,MOUNT#01145,Polska,,Masyw Śnieżnika,Trójmorski Wierch,1145,"50,157; 16,7905278","50,157","16,7905278","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#masyw-snieznika,,,,,,,Polska,,Masyw Śnieżnika
+RANGE#masyw-snieznika,MOUNT#wysoczka,CNTRY#polska,MOUNT#01185,REGIO#,MOUNT#01185,RANGE#masyw-snieznika,MOUNT#01185,Polska,,Masyw Śnieżnika,Wysoczka,1185,"50,1928333; 16,8023056","50,1928333","16,8023056","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#masyw-snieznika,,,,,,,Polska,,Masyw Śnieżnika
+RANGE#masyw-snieznika,MOUNT#zmijowiec,CNTRY#polska,MOUNT#01153,REGIO#,MOUNT#01153,RANGE#masyw-snieznika,MOUNT#01153,Polska,,Masyw Śnieżnika,Żmijowiec,1153,"50,2340556; 16,8245556","50,2340556","16,8245556","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-bialskie,,,,,,,Polska,,Góry Bialskie
+RANGE#gory-bialskie,MOUNT#biala-kopa,CNTRY#polska,MOUNT#01033,REGIO#,MOUNT#01033,RANGE#gory-bialskie,MOUNT#01033,Polska,,Góry Bialskie,Biała Kopa,1033,"50,2516389; 16,9758611","50,2516389","16,9758611","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-bialskie,,,,,,,Polska,,Góry Bialskie
+RANGE#gory-bialskie,MOUNT#brusek,CNTRY#polska,MOUNT#01124,REGIO#,MOUNT#01124,RANGE#gory-bialskie,MOUNT#01124,Polska,,Góry Bialskie,Brusek,1124,"50,2261389; 17,0244444","50,2261389","17,0244444","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-bialskie,,,,,,,Polska,,Góry Bialskie
+RANGE#gory-bialskie,MOUNT#czernica,CNTRY#polska,MOUNT#01083,REGIO#,MOUNT#01083,RANGE#gory-bialskie,MOUNT#01083,Polska,,Góry Bialskie,Czernica,1083,"50,2720556; 16,9642778","50,2720556","16,9642778","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-bialskie,,,,,,,Polska,,Góry Bialskie
+RANGE#gory-bialskie,MOUNT#dzial,CNTRY#polska,MOUNT#01027,REGIO#,MOUNT#01027,RANGE#gory-bialskie,MOUNT#01027,Polska,,Góry Bialskie,Dział,1027,"50,2274444; 16,9915556","50,2274444","16,9915556","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-bialskie,,,,,,,Polska,,Góry Bialskie
+RANGE#gory-bialskie,MOUNT#iwinka,CNTRY#polska,MOUNT#01079,REGIO#,MOUNT#01079,RANGE#gory-bialskie,MOUNT#01079,Polska,,Góry Bialskie,Iwinka,1079,"50,24; 16,9819444","50,24","16,9819444","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-bialskie,,,,,,,Polska,,Góry Bialskie
+RANGE#gory-bialskie,MOUNT#jawornicka-kopa,CNTRY#polska,MOUNT#01052,REGIO#,MOUNT#01052,RANGE#gory-bialskie,MOUNT#01052,Polska,,Góry Bialskie,Jawornicka Kopa,1052,"50,2465833; 16,9482222","50,2465833","16,9482222","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-bialskie,,,,,,,Polska,,Góry Bialskie
+RANGE#gory-bialskie,MOUNT#jawornik-graniczny,CNTRY#polska,MOUNT#01030,REGIO#,MOUNT#01030,RANGE#gory-bialskie,MOUNT#01030,Polska,,Góry Bialskie,Jawornik Graniczny,1030,"50,2305278; 16,9659722","50,2305278","16,9659722","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-bialskie,,,,,,,Polska,,Góry Bialskie
+RANGE#gory-bialskie,MOUNT#orlik,CNTRY#polska,MOUNT#01068,REGIO#,MOUNT#01068,RANGE#gory-bialskie,MOUNT#01068,Polska,,Góry Bialskie,Orlik,1068,"50,2440833; 16,9568889","50,2440833","16,9568889","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-bialskie,,,,,,,Polska,,Góry Bialskie
+RANGE#gory-bialskie,MOUNT#ploska,CNTRY#polska,MOUNT#01035,REGIO#,MOUNT#01035,RANGE#gory-bialskie,MOUNT#01035,Polska,,Góry Bialskie,Płoska,1035,"50,2725833; 16,9774722","50,2725833","16,9774722","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-bialskie,,,,,,,Polska,,Góry Bialskie
+RANGE#gory-bialskie,MOUNT#rude-krzyze,CNTRY#polska,MOUNT#01053,REGIO#,MOUNT#01053,RANGE#gory-bialskie,MOUNT#01053,Polska,,Góry Bialskie,Rude Krzyże,1053,"50,2385; 16,9632222","50,2385","16,9632222","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-bialskie,,,,,,,Polska,,Góry Bialskie
+RANGE#gory-bialskie,MOUNT#smrecznik,CNTRY#polska,MOUNT#01089,REGIO#,MOUNT#01089,RANGE#gory-bialskie,MOUNT#01089,Polska,,Góry Bialskie,Smrecznik,1089,"50,2329167; 17,0142222","50,2329167","17,0142222","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-bialskie,,,,,,,Polska,,Góry Bialskie
+RANGE#gory-bialskie,MOUNT#smrek-trojkrajny,CNTRY#polska,MOUNT#01117,REGIO#,MOUNT#01117,RANGE#gory-bialskie,MOUNT#01117,Polska,,Góry Bialskie,Smrek Trójkrajny,1117,"50,2334444; 17,0222778","50,2334444","17,0222778","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-bialskie,,,,,,,Polska,,Góry Bialskie
+RANGE#gory-bialskie,MOUNT#sucha-kopa,CNTRY#polska,MOUNT#01054,REGIO#,MOUNT#01054,RANGE#gory-bialskie,MOUNT#01054,Polska,,Góry Bialskie,Sucha Kopa,1054,"50,2524167; 16,9306111","50,2524167","16,9306111","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#gory-bialskie,,,,,,,Polska,,Góry Bialskie
+RANGE#gory-bialskie,MOUNT#suszyca,CNTRY#polska,MOUNT#01047,REGIO#,MOUNT#01047,RANGE#gory-bialskie,MOUNT#01047,Polska,,Góry Bialskie,Suszyca,1047,"50,2589444; 16,9238333","50,2589444","16,9238333","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': None, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#masyw-slezy,,,,,,,Polska,,Masyw Ślęży
+RANGE#masyw-slezy,MOUNT#szczytna,CNTRY#polska,MOUNT#00466,REGIO#,MOUNT#00466,RANGE#masyw-slezy,MOUNT#00466,Polska,,Masyw Ślęży,Szczytna,466,"50,817903; 16,632823","50,817903","16,632823","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': True, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#masyw-slezy,,,,,,,Polska,,Masyw Ślęży
+RANGE#masyw-slezy,MOUNT#wiezyca,CNTRY#polska,MOUNT#00415,REGIO#,MOUNT#00415,RANGE#masyw-slezy,MOUNT#00415,Polska,,Masyw Ślęży,Wieżyca,415,"50,886680; 16,728884","50,886680","16,728884","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': True, 'KMSL': True, 'DogFriendly': None}"
+CNTRY#polska,REGIO#,,,,,,,Polska,
+REGIO#,RANGE#masyw-slezy,,,,,,,Polska,,Masyw Ślęży
+RANGE#masyw-slezy,MOUNT#gozdnica,CNTRY#polska,MOUNT#00316,REGIO#,MOUNT#00316,RANGE#masyw-slezy,MOUNT#00316,Polska,,Masyw Ślęży,Gozdnica,316,"50,8950154; 16,7264960","50,8950154","16,7264960","{'KGP': True, 'Diadem': True, 'KGS': True, 'KS': True, 'KNSSP': True, 'TZK': True, 'KBW': True, 'KMSL': True, 'DogFriendly': None}"
