@@ -1,0 +1,145 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  python3.9
+  SAM Template for liczyrzepa-api
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 10
+    Runtime: python3.9
+    MemorySize: 128
+    Tracing: Active
+    Environment:
+      Variables:
+        POWERTOOLS_SERVICE_NAME: liczyrzepa_api
+        LOG_LEVEL: DEBUG
+  Api:
+    TracingEnabled: true
+
+Resources:
+  LiczyrzepaAPIFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      PackageType: Zip
+      CodeUri: api/
+      Handler: router.lambda_handler
+      Architectures:
+      - x86_64
+      Policies:
+      - AmazonDynamoDBFullAccess
+      Events:
+        GetAll:
+          Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            Path: /country
+            Method: get
+        GetById:
+          Type: Api
+          Properties:
+            Path: /country/{country}
+            Method: get
+  ApplicationResourceGroup:
+    Type: AWS::ResourceGroups::Group
+    Properties:
+      Name:
+        Fn::Join:
+        - ''
+        - - ApplicationInsights-SAM-
+          - Ref: AWS::StackName
+      ResourceQuery:
+        Type: CLOUDFORMATION_STACK_1_0
+  ApplicationInsightsMonitoring:
+    Type: AWS::ApplicationInsights::Application
+    Properties:
+      ResourceGroupName:
+        Fn::Join:
+        - ''
+        - - ApplicationInsights-SAM-
+          - Ref: AWS::StackName
+      AutoConfigurationEnabled: 'true'
+    DependsOn: ApplicationResourceGroup
+  # LiczyrzepaAPIFunctionPermissions:
+  #   Type: AWS::Lambda::Permission
+  #   Properties:
+  #     FunctionName: !Ref LiczyrzepaAPIFunction
+  #     Action: lambda:InvokeFunctionUrl
+  #     Principal: "*"
+  #     FunctionUrlAuthType: NONE
+  # LiczyrzepaAPIFunctionUrl:
+  #   Type: AWS::Lambda::Url
+  #   Properties:
+  #     AuthType: NONE
+  #     TargetFunctionArn: !Ref LiczyrzepaAPIFunction
+
+  # DynamoDB table to store item: {id: &lt;ID&gt;, name: &lt;NAME&gt;}
+  LiczyrzepaDB:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: Liczyrzepa
+      AttributeDefinitions:
+        - AttributeName: PK
+          AttributeType: S
+        - AttributeName: SK
+          AttributeType: S
+        - AttributeName: GSI1PK
+          AttributeType: S
+        - AttributeName: GSI1SK
+          AttributeType: S
+        - AttributeName: GSI2PK
+          AttributeType: S
+        - AttributeName: GSI2SK
+          AttributeType: S
+        - AttributeName: GSI3PK
+          AttributeType: S
+        - AttributeName: GSI3SK
+          AttributeType: S
+      KeySchema:
+        - AttributeName: PK
+          KeyType: HASH
+        - AttributeName: SK
+          KeyType: RANGE
+      GlobalSecondaryIndexes: # https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-modeling-nosql-B.html
+        - IndexName: GSI1
+          KeySchema:
+            - AttributeName: GSI1PK
+              KeyType: HASH
+            - AttributeName: GSI1SK
+              KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+        - IndexName: GSI2
+          KeySchema:
+            - AttributeName: GSI2PK
+              KeyType: HASH
+            - AttributeName: GSI2SK
+              KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+        - IndexName: GSI3
+          KeySchema:
+            - AttributeName: GSI3PK
+              KeyType: HASH
+            - AttributeName: GSI3SK
+              KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+      BillingMode: PAY_PER_REQUEST
+
+Outputs:
+  # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
+  # Find out more about other implicit resources you can reference within SAM
+  # https://github.com/awslabs/serverless-application-model/blob/master/docs/internals/generated_resources.rst#api
+  LiczyrzepaApi:
+    Description: "API Gateway endpoint URL for Prod stage for Liczyrzepa API function"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
+  LiczyrzepaAPIFunction:
+    Description: "Liczyrzepa API Lambda Function ARN"
+    Value: !GetAtt LiczyrzepaAPIFunction.Arn
+  LiczyrzepaAPIFunctionIamRole:
+    Description: "Implicit IAM Role created for Liczyrzepa API function"
+    Value: !GetAtt LiczyrzepaAPIFunctionRole.Arn
+  LiczyrzepaDB:
+    Description: "Database"
+    Value: !GetAtt LiczyrzepaDB.Arn
