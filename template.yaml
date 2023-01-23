@@ -133,8 +133,17 @@ Resources:
         InputCompressionType: NONE
         InputFormat: CSV
         S3BucketSource:
-          S3Bucket: 'liczyrzepa-s3-bucket-01'
+          S3Bucket: !Ref LiczyrzepaS3Bucket
           S3KeyPrefix: 'db-backup/liczyrzepa_db.csv'
+
+  LiczyrzepaS3Bucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    Properties:
+      AccessControl: BucketOwnerFullControl
+      BucketName: liczyrzepa-s3-bucket-01
+      VersioningConfiguration:
+        Status: Suspended
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
