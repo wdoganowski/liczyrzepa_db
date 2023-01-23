@@ -7,4 +7,4 @@ s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1in2gg99newke"
 s3_prefix = "liczyrzepa-api"
 region = "eu-north-1"
 capabilities = "CAPABILITY_IAM"
-image_repositories = ["LiczyrzepaAPIFunction=324022692214.dkr.ecr.eu-north-1.amazonaws.com/liczyrzepaapifdb48c08/liczyrzepaapifunction40a4d58crepo"]
+image_repositories = []

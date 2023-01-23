@@ -12,13 +12,13 @@ from aws_lambda_powertools.logging import correlation_paths
 from aws_lambda_powertools.utilities.typing import LambdaContext
 
 # routers
-import router_get
+import router_country
 
 tracer = Tracer()
 logger = Logger()
 app = APIGatewayRestResolver()
 
-app.include_router(router_get.router, prefix="/get")
+app.include_router(router_country.router, prefix="/country")
 
 @app.not_found
 @tracer.capture_method
