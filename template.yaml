@@ -7,7 +7,7 @@ Description: >
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
   Function:
-    Timeout: 10
+    Timeout: 30
     Runtime: python3.9
     MemorySize: 128
     Tracing: Active
@@ -30,24 +30,39 @@ Resources:
       Policies:
       - AmazonDynamoDBFullAccess
       Events:
-        GetAll:
+        GetCountries:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
           Properties:
             Path: /country
             Method: get
-        GetById:
+        GetCountry:
           Type: Api
           Properties:
             Path: /country/{country}
+            Method: get
+        GetCountryRegions:
+          Type: Api
+          Properties:
+            Path: /country/{country}/regions
+            Method: get
+        GetRegion:
+          Type: Api
+          Properties:
+            Path: /region/{country}/{region}
+            Method: get
+        GetRegionRanges:
+          Type: Api
+          Properties:
+            Path: /region/{country}/{region}/ranges
             Method: get
   ApplicationResourceGroup:
     Type: AWS::ResourceGroups::Group
     Properties:
       Name:
         Fn::Join:
-        - ''
-        - - ApplicationInsights-SAM-
-          - Ref: AWS::StackName
+          - ''
+          - - ApplicationInsights-SAM-
+            - Ref: AWS::StackName
       ResourceQuery:
         Type: CLOUDFORMATION_STACK_1_0
   ApplicationInsightsMonitoring:
@@ -58,7 +73,7 @@ Resources:
         - ''
         - - ApplicationInsights-SAM-
           - Ref: AWS::StackName
-      AutoConfigurationEnabled: 'true'
+      AutoConfigurationEnabled: true
     DependsOn: ApplicationResourceGroup
   # LiczyrzepaAPIFunctionPermissions:
   #   Type: AWS::Lambda::Permission

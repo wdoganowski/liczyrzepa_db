@@ -11,14 +11,17 @@ from aws_lambda_powertools.event_handler.exceptions import (
 from aws_lambda_powertools.logging import correlation_paths
 from aws_lambda_powertools.utilities.typing import LambdaContext
 
-# routers
-import router_country
-
 tracer = Tracer()
 logger = Logger()
 app = APIGatewayRestResolver()
 
+# routers
+import router_country
+import router_region
+
 app.include_router(router_country.router, prefix="/country")
+app.include_router(router_region.router, prefix="/region")
+
 
 @app.not_found
 @tracer.capture_method

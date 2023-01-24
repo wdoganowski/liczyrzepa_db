@@ -3,8 +3,8 @@
 1. GET /country                         Returns countries
 2. GET /country/{country}               Returns country
 3. GET /country/{country}/regions       Returns regions of country
-4. GET /region/{region}                 Returns region
-5. GET /region/{region}/ranges          Returns mointain ranges of region
+4. GET /region/{country}/{region}                 Returns region
+5. GET /region/{country}/{region}/ranges          Returns mointain ranges of region
 6. GET /range/{range}                   Returns mountain range
 7. GET /range/{range}/shelters          Returns shelters in the range
 8. GET /shelter/{shelter}               Returns shelter

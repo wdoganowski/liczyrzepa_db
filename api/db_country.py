@@ -59,6 +59,42 @@ def db_get_country(country: str) -> dict:
     return country
 
 
+@tracer.capture_method
+def db_get_country_regions(country: str) -> dict:
+    client = db_client()
+    resp = client.query(
+        TableName = TableName,
+        KeyConditionExpression = "#pk = :pk and begins_with(#sk, :sk)",
+        ExpressionAttributeNames = {
+            '#pk': 'PK',
+            '#sk': 'SK'
+        },
+        ExpressionAttributeValues = {
+            ':pk': {'S': f'CNTRY#{country}'},
+            ':sk': {'S': f'REGIO#'}
+        }
+    )
+    from pprint import pprint
+    pprint(resp)
+    regions = []
+    try:
+        for region in resp['Items']:
+            try:
+                regions.append(
+                    {
+                        'CountryName': region['CountryName']['S'],
+                        'RegionName': region['RegionName']['S']
+                    }
+                )
+            except KeyError:
+                logger.info(f"region without a name")
+    except KeyError:
+        logger.info(f"region matching {country} not found")
+
+    logger.info(f"return regions matching {country}: {regions}")
+    return regions
+
+
 # @tracer.capture_method
 # def db_create_country(country: dict):
 #     client = db_client()
