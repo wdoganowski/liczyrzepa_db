@@ -1,4 +1,4 @@
-import boto3
+from slugify import slugify
 from db import db_client, TableName
 from aws_lambda_powertools import Logger, Tracer
 
@@ -8,6 +8,7 @@ logger = Logger()
 
 @tracer.capture_method
 def db_get_countries(filter: str = '') -> dict:
+    filter = slugify(filter)
     client = db_client()
     resp = client.query(
         TableName = TableName,
@@ -27,6 +28,7 @@ def db_get_countries(filter: str = '') -> dict:
         for country in resp['Items']:
             countries.append(
                 {
+                    'CountryKey': country['PK']['S'][6:],
                     'CountryName': country['CountryName']['S']
                 }
             )
@@ -39,6 +41,7 @@ def db_get_countries(filter: str = '') -> dict:
 
 @tracer.capture_method
 def db_get_country(country: str) -> dict:
+    country = slugify(country)
     client = db_client()
     resp = client.get_item(
         TableName = TableName,
@@ -49,6 +52,7 @@ def db_get_country(country: str) -> dict:
     )
     try:
         country = {
+            'CountryKey': country,
             'CountryName': resp['Item']['CountryName']['S']
         }
     except KeyError:
@@ -61,28 +65,30 @@ def db_get_country(country: str) -> dict:
 
 @tracer.capture_method
 def db_get_country_regions(country: str) -> dict:
+    country = slugify(country)
     client = db_client()
     resp = client.query(
         TableName = TableName,
+        IndexName = 'GSI1',
         KeyConditionExpression = "#pk = :pk and begins_with(#sk, :sk)",
         ExpressionAttributeNames = {
-            '#pk': 'PK',
-            '#sk': 'SK'
+            '#pk': 'GSI1PK',
+            '#sk': 'GSI1SK'
         },
         ExpressionAttributeValues = {
             ':pk': {'S': f'CNTRY#{country}'},
             ':sk': {'S': f'REGIO#'}
         }
     )
-    from pprint import pprint
-    pprint(resp)
+
     regions = []
     try:
         for region in resp['Items']:
             try:
                 regions.append(
                     {
-                        'CountryName': region['CountryName']['S'],
+                        'CountryKey': country,
+                        'RegionKey': region['PK']['S'][6:],
                         'RegionName': region['RegionName']['S']
                     }
                 )

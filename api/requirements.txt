@@ -4,3 +4,4 @@ boto3
 jmespath
 aws_xray_sdk
 aws_lambda_powertools
+python-slugify
