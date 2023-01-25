@@ -12,6 +12,13 @@ Parameters:
     AllowedValues:
       - 'Yes'
       - 'No'
+  DeploymentStage:
+    Description: The stage to which it should be deployed
+    Type: String
+    Default: Dev
+    AllowedValues:
+      - Dev
+      - Prod
 
 Conditions:
   IfCreateS3Bucket:
@@ -34,11 +41,20 @@ Globals:
     TracingEnabled: true
 
 Resources:
+  # LiczyrzepaAPIStage:
+  #   Type: AWS::Serverless::Api
+  #   Properties:
+  #     # Cors:
+  #     #   AllowHeaders: "'*'"
+  #     #   AllowMethods: "'*'"
+  #     #   AllowOrigin: "'*'"
+  #     StageName: !Ref DeploymentStage
+
   LiczyrzepaAPIFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       PackageType: Zip
-      CodeUri: api/
+      CodeUri: ./api
       Handler: router.lambda_handler
       Architectures:
       - x86_64
@@ -238,7 +254,7 @@ Outputs:
   # https://github.com/awslabs/serverless-application-model/blob/master/docs/internals/generated_resources.rst#api
   LiczyrzepaApi:
     Description: "API Gateway endpoint URL for Prod stage for Liczyrzepa API function"
-    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/${DeploymentStage}/"
   LiczyrzepaAPIFunction:
     Description: "Liczyrzepa API Lambda Function ARN"
     Value: !GetAtt LiczyrzepaAPIFunction.Arn

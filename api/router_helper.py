@@ -1,6 +1,8 @@
 from aws_lambda_powertools.event_handler import APIGatewayRestResolver
 from aws_lambda_powertools import Logger, Tracer
 
+from version import LiczyrzepaAPIVersion
+
 tracer = Tracer()
 logger = Logger()
 
@@ -20,10 +22,11 @@ def build_response(data: dict = None, status: str = 'OK', code: int = 200, error
         code = 404
         logger.info(f"overriting the status code to 404 NOT_FOUND")
     return{
-        "data": data, 
-        "function": app.current_event.path, 
-        "params": app.current_event.query_string_parameters, 
-        "status": status,
-        "error": error,
-        "code": code
+        'data': data, 
+        'function': app.current_event.path, 
+        'params': app.current_event.query_string_parameters, 
+        'status': status,
+        'error': error,
+        'code': code,
+        'version': LiczyrzepaAPIVersion
     }, code
