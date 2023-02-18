@@ -13,7 +13,7 @@
 | 9.  | GET /shelter/{shelter}/picures      | Returns shelter pictures
 | 10. | GET /shelter/{shelter}/opinions     | Returns shelter opinions
 | 11. | GET /shelter/bby_elevationby_elevation/{min}/{max}?country={country} or region={region} or range={range}                                     |  Returns shelters between min and max elevation with optional filters for country, region and range (widest filter is applied only)
-| 12. | GET /range/{range}/mountains        | Returns mountains in the range
+| 12. | GET /range/{range}/mounts           | Returns mountains in the range
 | 13. | GET /mount/{mountain}               | Returns mountain
 | 14. | GET /mount/{mountain}/picures       | Returns mountain pictures
 | 15. | GET /mount/{mountain}/opinions      | Returns mountain opinions
