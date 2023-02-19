@@ -12,12 +12,161 @@
 | 8.  | GET /shelter/{shelter}              | Returns shelter
 | 9.  | GET /shelter/{shelter}/picures      | Returns shelter pictures
 | 10. | GET /shelter/{shelter}/opinions     | Returns shelter opinions
-| 11. | GET /shelter/bby_elevationby_elevation/{min}/{max}?country={country} or region={region} or range={range}                                     |  Returns shelters between min and max elevation with optional filters for country, region and range (widest filter is applied only)
+| 11. | GET /shelter/elevation/{min}/{max}?country={country} or region={region} or range={range}                                     |  Returns shelters between min and max elevation with optional filters for country, region and range (widest filter is applied only)
 | 12. | GET /range/{range}/mounts           | Returns mountains in the range
 | 13. | GET /mount/{mountain}               | Returns mountain
 | 14. | GET /mount/{mountain}/picures       | Returns mountain pictures
 | 15. | GET /mount/{mountain}/opinions      | Returns mountain opinions
-| 16. | GET /mount/by_elevation/{min}/{max}?country={country} or region={region} or range={range}                                     | Returns mountains between min and max elevation with optional filters for country, region and range (widest filter is applied only)
+| 16. | GET /mount/elevation/{min}/{max}?country={country} or region={region} or range={range}                                     | Returns mountains between min and max elevation with optional filters for country, region and range (widest filter is applied only)
+
+# Examples
+
+ 
+https://{base_url}/country
+ 
+```json
+{
+  "data": [
+    {
+      "countryKey": "polska",
+      "countryName": "Polska"
+    }
+  ],
+  "function": "/country",
+  "params": null,
+  "status": "OK",
+  "error": null,
+  "code": 200,
+  "version": "V0.2 Started 2023-02-19T15:43:40 UTC"
+}
+```
+ 
+https://{base_url}/country/polska/regions
+ 
+```json
+{
+  "data": [
+    {
+      "countryKey": "polska",
+      "regionKey": "przedgorze-sudeckie",
+      "regionName": "Przedgórze Sudeckie"
+    },
+    {
+      "countryKey": "polska",
+      "regionKey": "sudety-srodkowe",
+      "regionName": "Sudety Środkowe"
+    },
+    {
+      "countryKey": "polska",
+      "regionKey": "sudety-wschodnie",
+      "regionName": "Sudety Wschodnie"
+    },
+    {
+      "countryKey": "polska",
+      "regionKey": "sudety-zachodnie",
+      "regionName": "Sudety Zachodnie"
+    }
+  ],
+  "function": "/country/polska/regions",
+  "params": null,
+  "status": "OK",
+  "error": null,
+  "code": 200,
+  "version": "V0.2 Started 2023-02-19T15:48:12 UTC"
+}
+```
+ 
+https://{base_url}/region/sudety-wschodnie/ranges
+ 
+```json
+{
+"data": [
+    {
+      "countryKey": "polska",
+      "regionKey": "sudety-wschodnie",
+      "rangeKey": "hanusovicka-vrchovina",
+      "rangeName": "Hanusovicka Vrchovina"
+    },
+    {
+      "countryKey": "polska",
+      "regionKey": "sudety-wschodnie",
+      "rangeKey": "niski-jesionik",
+      "rangeName": "Niski Jesionik"
+    },
+    {
+      "countryKey": "polska",
+      "regionKey": "sudety-wschodnie",
+      "rangeKey": "wysoki-jesionik",
+      "rangeName": "Wysoki Jesionik"
+    },
+    {
+      "countryKey": "polska",
+      "regionKey": "sudety-wschodnie",
+      "rangeKey": "zabrezska-vrchovina",
+      "rangeName": "Zabrezska Vrchovina"
+    }
+  ],
+  "function": "/region/sudety-wschodnie/ranges",
+  "params": null,
+  "status": "OK",
+  "error": null,
+  "code": 200,
+  "version": "V0.2 Started 2023-02-19T15:49:30 UTC"
+}
+``` 
+
+https://{base_url}/range/zabrezska-vrchovina/mounts
+ 
+```json
+{
+"data": [
+    {
+      "countryKey": "polska",
+      "regionKey": "sudety-wschodnie",
+      "rangeKey": "zabrezska-vrchovina",
+      "mountainKey": "lazek",
+      "rangeName": "Lazek"
+    }
+  ],
+  "function": "/range/zabrezska-vrchovina/mounts",
+  "params": null,
+  "status": "OK",
+  "error": null,
+  "code": 200,
+  "version": "V0.2 Started 2023-02-19T15:50:49 UTC"
+}
+```
+ 
+https://{base_url}/mount/lazek
+ 
+```json
+{
+  "data": {
+    "countryKey": "polska",
+    "regionKey": "sudety-wschodnie",
+    "rangenKey": "zabrezska-vrchovina",
+    "mountainsKey": "lazek",
+    "mountainName": "Lazek",
+    "attributes": {
+      "kgp": true,    # Korona Gór Polskich
+      "dpg": true,    # Diadem Polskich Gór
+      "kgs": true,    # Korona Gór Stołowych
+      "ks": true,     # Korona Sudetów
+      "knssp": true,  # Korona Najwybitniejszych Szczytów Sudetów Polskich
+      "tzk": true,    # Tysięczniki Ziemi Kłodzkiej
+      "kbw": null,    # Korona Beskidu Wyspowego
+      "kmsl": true,   # Korona Masywu Ślęży
+      "dogFriendly": null
+    }
+  },
+  "function": "/mount/lazek",
+  "params": null,
+  "status": "OK",
+  "error": null,
+  "code": 200,
+  "version": "V0.2 Started 2023-02-19T16:06:03 UTC"
+}
+```
 
 # Entity chart
 

@@ -19,10 +19,10 @@ def db_get_range(range: str) -> dict:
     )
     try:
         range = {
-            'CountryKey': resp['Item']['GSI1PK']['S'][6:],
-            'RegionKey': resp['Item']['GSI2PK']['S'][6:],
-            'RangenKey': range,
-            'RangenName': resp['Item']['RangeName']['S']
+            'countryKey': resp['Item']['GSI1PK']['S'][6:],
+            'regionKey': resp['Item']['GSI2PK']['S'][6:],
+            'rangenKey': range,
+            'rangenName': resp['Item']['RangeName']['S']
         }
     except KeyError:
         logger.info(f"range {range} not found")
@@ -55,11 +55,11 @@ def db_get_range_mountains(range: str) -> dict:
             try:
                 mountains.append(
                     {
-                        'CountryKey': mountain['GSI1PK']['S'][6:],
-                        'RegionKey': mountain['GSI2PK']['S'][6:],
-                        'RangeKey': range,
-                        'MountainKey': mountain['PK']['S'][6:],
-                        'RangeName': mountain['MountainName']['S'],
+                        'countryKey': mountain['GSI1PK']['S'][6:],
+                        'regionKey': mountain['GSI2PK']['S'][6:],
+                        'rangeKey': range,
+                        'mountainKey': mountain['PK']['S'][6:],
+                        'rangeName': mountain['MountainName']['S'],
                     }
                 )
             except KeyError:

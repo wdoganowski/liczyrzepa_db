@@ -95,15 +95,15 @@ with open(input_file) as csv_input_file:
         csv_writer.writerow(mountain_row(
             country, region, range, mountain, int(row[1]), row[4], row[5], row[6], 
             {
-              'KGP': bool_or_none(row[7]),
-              'Diadem': bool_or_none(row[8]),
-              'KGS': bool_or_none(row[9]),
-              'KS': bool_or_none(row[10]),
-              'KNSSP': bool_or_none(row[11]),
-              'TZK': bool_or_none(row[12]),
-              'KBW': bool_or_none(row[13]),
-              'KMSL': bool_or_none(row[14]),
-              'DogFriendly': bool_or_none(row[15])
+              'kgp': bool_or_none(row[7]),    # Korona Gór Polskich
+              'dpg': bool_or_none(row[8]),    # Diadem Polskich Gór
+              'kgs': bool_or_none(row[9]),    # Korona Gór Stołowych
+              'ks': bool_or_none(row[10]),    # Korona Sudetów
+              'knssp': bool_or_none(row[11]), # Korona Najwybitniejszych Szczytów Sudetów Polskich
+              'tzk': bool_or_none(row[12]),   # Tysięczniki Ziemi Kłodzkiej
+              'kbw': bool_or_none(row[13]),   # Korona Beskidu Wyspowego
+              'kmsl': bool_or_none(row[14]),  # Korona Masywu Ślęży
+              'dogFriendly': bool_or_none(row[15])
             }
           ))
         line_count += 1

@@ -28,8 +28,8 @@ def db_get_countries(filter: str = '') -> dict:
         for country in resp['Items']:
             countries.append(
                 {
-                    'CountryKey': country['PK']['S'][6:],
-                    'CountryName': country['CountryName']['S']
+                    'countryKey': country['PK']['S'][6:],
+                    'countryName': country['CountryName']['S']
                 }
             )
     except KeyError:
@@ -52,8 +52,8 @@ def db_get_country(country: str) -> dict:
     )
     try:
         country = {
-            'CountryKey': country,
-            'CountryName': resp['Item']['CountryName']['S']
+            'countryKey': country,
+            'countryName': resp['Item']['CountryName']['S']
         }
     except KeyError:
         logger.info(f"country {country} not found")
@@ -87,9 +87,9 @@ def db_get_country_regions(country: str) -> dict:
             try:
                 regions.append(
                     {
-                        'CountryKey': country,
-                        'RegionKey': region['PK']['S'][6:],
-                        'RegionName': region['RegionName']['S']
+                        'countryKey': country,
+                        'regionKey': region['PK']['S'][6:],
+                        'regionName': region['RegionName']['S']
                     }
                 )
             except KeyError:

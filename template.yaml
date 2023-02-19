@@ -104,7 +104,7 @@ Resources:
         GetMountsByElevation:
           Type: Api
           Properties:
-            Path: /mount/by_elevation/{min}/{max}
+            Path: /mount/elevation/{min}/{max}
             Method: get
   ApplicationResourceGroup:
     Type: AWS::ResourceGroups::Group
@@ -235,7 +235,7 @@ Resources:
         InputCompressionType: NONE
         InputFormat: CSV
         S3BucketSource:
-          S3Bucket: liczyrzepa-s3-bucket-01
+          S3Bucket: liczyrzepa-s3-bucket-02
           S3KeyPrefix: 'db-backup/liczyrzepa_db.csv'
 
   LiczyrzepaS3Bucket:
@@ -244,7 +244,7 @@ Resources:
     DeletionPolicy: Retain
     Properties:
       AccessControl: BucketOwnerFullControl
-      BucketName: liczyrzepa-s3-bucket-01
+      BucketName: liczyrzepa-s3-bucket-02
       VersioningConfiguration:
         Status: Suspended
 

@@ -19,9 +19,9 @@ def db_get_region(region: str) -> dict:
     )
     try:
         region = {
-            'CountryKey': resp['Item']['GSI1PK']['S'][6:],
-            'RegionKey': region,
-            'RegionName': resp['Item']['RegionName']['S']
+            'countryKey': resp['Item']['GSI1PK']['S'][6:],
+            'regionKey': region,
+            'regionName': resp['Item']['RegionName']['S']
         }
     except KeyError:
         logger.info(f"region {region} not found")
@@ -55,10 +55,10 @@ def db_get_region_ranges(region: str) -> dict:
             try:
                 ranges.append(
                     {
-                        'CountryKey': range['GSI1PK']['S'][6:],
-                        'RegionKey': region,
-                        'RangeKey': range['PK']['S'][6:],
-                        'RangeName': range['RangeName']['S'],
+                        'countryKey': range['GSI1PK']['S'][6:],
+                        'regionKey': region,
+                        'rangeKey': range['PK']['S'][6:],
+                        'rangeName': range['RangeName']['S'],
                     }
                 )
             except KeyError:

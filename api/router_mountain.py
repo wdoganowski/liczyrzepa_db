@@ -20,7 +20,7 @@ def get_mount(mountain: str) -> dict:
     return build_response(mountain_data)
 
 
-@router.get("/by_elevation/<min>/<max>")
+@router.get("/elevation/<min>/<max>")
 @tracer.capture_method
 def get_mounts_by_elevation(min: str, max: str) -> dict:
     # verify min and max, if not int, error will rise
