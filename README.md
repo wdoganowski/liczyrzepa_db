@@ -37,7 +37,7 @@ https://{base_url}/country
   "status": "OK",
   "error": null,
   "code": 200,
-  "version": "V0.2 Started 2023-02-19T15:43:40 UTC"
+  "version": "V0.2.2 Started 2023-02-20T17:31:19 UTC"
 }
 ```
  
@@ -72,7 +72,7 @@ https://{base_url}/country/polska/regions
   "status": "OK",
   "error": null,
   "code": 200,
-  "version": "V0.2 Started 2023-02-19T15:48:12 UTC"
+  "version": "V0.2.2 Started 2023-02-20T17:31:19 UTC"
 }
 ```
  
@@ -111,7 +111,7 @@ https://{base_url}/region/sudety-wschodnie/ranges
   "status": "OK",
   "error": null,
   "code": 200,
-  "version": "V0.2 Started 2023-02-19T15:49:30 UTC"
+  "version": "V0.2.2 Started 2023-02-20T17:31:19 UTC"
 }
 ``` 
 
@@ -133,7 +133,7 @@ https://{base_url}/range/zabrezska-vrchovina/mounts
   "status": "OK",
   "error": null,
   "code": 200,
-  "version": "V0.2 Started 2023-02-19T15:50:49 UTC"
+  "version": "V0.2.2 Started 2023-02-20T17:31:19 UTC"
 }
 ```
  
@@ -164,7 +164,7 @@ https://{base_url}/mount/lazek
   "status": "OK",
   "error": null,
   "code": 200,
-  "version": "V0.2 Started 2023-02-19T16:06:03 UTC"
+  "version": "V0.2.2 Started 2023-02-20T17:31:19 UTC"
 }
 ```
 
