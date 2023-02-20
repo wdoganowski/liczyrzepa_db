@@ -22,7 +22,7 @@ def mountain_info(mountain: dict) -> dict:
             'countryKey': mountain['GSI1PK']['S'][6:],
             'regionKey': mountain['GSI2PK']['S'][6:],
             'rangeKey': mountain['GSI3PK']['S'][6:],
-            'mountainsKey': mountain['PK']['S'][6:],
+            'mountainKey': mountain['PK']['S'][6:],
             'mountainName': mountain['MountainName']['S'],
             'attributes': json_convert(mountain['Attributes']['S'])
         }

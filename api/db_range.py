@@ -59,7 +59,7 @@ def db_get_range_mountains(range: str) -> dict:
                         'regionKey': mountain['GSI2PK']['S'][6:],
                         'rangeKey': range,
                         'mountainKey': mountain['PK']['S'][6:],
-                        'mountName': mountain['MountainName']['S'],
+                        'mountainName': mountain['MountainName']['S'],
                     }
                 )
             except KeyError:

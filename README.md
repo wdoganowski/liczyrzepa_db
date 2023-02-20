@@ -125,7 +125,7 @@ https://{base_url}/range/zabrezska-vrchovina/mounts
       "regionKey": "sudety-wschodnie",
       "rangeKey": "zabrezska-vrchovina",
       "mountainKey": "lazek",
-      "rangeName": "Lazek"
+      "mountainName": "Lazek"
     }
   ],
   "function": "/range/zabrezska-vrchovina/mounts",
@@ -144,8 +144,8 @@ https://{base_url}/mount/lazek
   "data": {
     "countryKey": "polska",
     "regionKey": "sudety-wschodnie",
-    "rangenKey": "zabrezska-vrchovina",
-    "mountainsKey": "lazek",
+    "rangeKey": "zabrezska-vrchovina",
+    "mountainKey": "lazek",
     "mountainName": "Lazek",
     "attributes": {
       "kgp": true,    # Korona Gór Polskich
