@@ -15,16 +15,37 @@ def json_convert(j: str) -> dict:
     j = json.loads(j)
     return j
 
+
+@tracer.capture_method
+def extract_value(mountain: dict, key: str, type:str) -> str:
+    try:
+      return mountain[key][type]
+    except KeyError:
+      return None
+
 @tracer.capture_method
 def mountain_info(mountain: dict) -> dict:
-    print(mountain['Attributes']['S'])
+    countryKey = extract_value(mountain, 'GSI1PK', 'S')[6:]
+    regionKey = extract_value(mountain, 'GSI2PK', 'S')[6:]
+    rangeKey = extract_value(mountain, 'GSI3PK', 'S')[6:]
+    mountainKey = extract_value(mountain, 'PK', 'S')[6:]
+    mountainName = extract_value(mountain, 'MountainName', 'S')
+    elevation = extract_value(mountain, 'Elevation', 'S')
+    latitude = extract_value(mountain, 'Latitude', 'S')
+    longitude = extract_value(mountain, 'Longitude', 'S')
+    geoCordinates = extract_value(mountain, 'GeoCordinates', 'S')
+    attributes = extract_value(mountain, 'Attributes', 'S')
     return {
-            'countryKey': mountain['GSI1PK']['S'][6:],
-            'regionKey': mountain['GSI2PK']['S'][6:],
-            'rangeKey': mountain['GSI3PK']['S'][6:],
-            'mountainKey': mountain['PK']['S'][6:],
-            'mountainName': mountain['MountainName']['S'],
-            'attributes': json_convert(mountain['Attributes']['S'])
+            'countryKey': countryKey,
+            'regionKey': regionKey,
+            'rangeKey': rangeKey,
+            'mountainKey': mountainKey,
+            'mountainName': mountainName,
+            'elevation': elevation,
+            'latitude': latitude,
+            'longitude': longitude,
+            'geoCordinates': geoCordinates,
+            'attributes': json_convert(attributes)
         }
 
 
@@ -52,6 +73,7 @@ def db_get_mountain(mountain: str) -> dict:
 
 @tracer.capture_method
 def db_get_mounts_by_elevation(min: str, max: str, country: str = None, region: str = None, range: str = None) -> dict:
+    logger.info(f"get mount by elevation {min} {max} {country} {region} {range}")
     if country != None:
         index = 'GSI4'
         key = f'CNTRY#{country}'
@@ -66,19 +88,23 @@ def db_get_mounts_by_elevation(min: str, max: str, country: str = None, region: 
         return None
 
     client = db_client()
+    expression = "#pk = :pk and #sk between :min and :max"
+    names = {
+            '#pk': f'{index}PK',
+            '#sk': f'{index}SK'
+        }
+    values = {
+            ':pk': {'S': key},
+            ':min': {'S': f'MTELV#{min:0>5s}'},
+            ':max': {'S': f'MTELV#{max:0>5s}'}
+        }
+    logger.info(f"{expression} {names} {values}")
     resp = client.query(
         TableName = TableName,
         IndexName = index,
-        KeyConditionExpression = "#pk = :pk and #sk betwen :min and :max)",
-        ExpressionAttributeNames = {
-            '#pk': f'{index}PK',
-            '#sk': f'{index}SK'
-        },
-        ExpressionAttributeValues = {
-            ':pk': {'S': key},
-            ':min': {'S': min},
-            ':max': {'S': max}
-        }
+        KeyConditionExpression = expression,
+        ExpressionAttributeNames = names,
+        ExpressionAttributeValues = values
     )
     mountains = []
     try:
@@ -86,10 +112,10 @@ def db_get_mounts_by_elevation(min: str, max: str, country: str = None, region: 
             try:
                 mountains.append(mountain_info(mountain))
             except KeyError:
-                logger.info(f"range without a name")
+                logger.info(f"mountain without a name? {mountain}")
     except KeyError:
-        logger.info(f"range matching range {range} not found")
+        logger.info(f"no matching mountains for {country} {region} {range}")
 
-    logger.info(f"return ranges matching range {range}: {mountains}")
+    logger.info(f"return mountains matching range {country} {region} {range}: {mountains}")
     return mountains
 

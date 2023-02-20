@@ -137,16 +137,20 @@ https://{base_url}/range/zabrezska-vrchovina/mounts
 }
 ```
  
-https://{base_url}/mount/lazek
+https://{base_url}/mount/sniezka
  
 ```json
 {
   "data": {
     "countryKey": "polska",
-    "regionKey": "sudety-wschodnie",
-    "rangeKey": "zabrezska-vrchovina",
-    "mountainKey": "lazek",
-    "mountainName": "Lazek",
+    "regionKey": "sudety-zachodnie",
+    "rangeKey": "karkonosze",
+    "mountainKey": "sniezka",
+    "mountainName": "Śnieżka",
+    "elevation": "1603",
+    "latitude": "50,7360171", 
+    "longitude": "15,7399457",
+    "geoCordinates": null,
     "attributes": {
       "kgp": true,    # Korona Gór Polskich
       "dpg": true,    # Diadem Polskich Gór

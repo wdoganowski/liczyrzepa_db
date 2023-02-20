@@ -27,7 +27,7 @@ def get_mounts_by_elevation(min: str, max: str) -> dict:
     m = int(min)
     m = int(max)
 
-    mountain_data = db_get_mounts_by_elevation(min, max)
+    mountain_data = db_get_mounts_by_elevation(min, max, country='polska')
     logger.info(f"get_mounts_by_elevation {min} {max} -> {mountain_data}")
     return build_response(mountain_data)
 
