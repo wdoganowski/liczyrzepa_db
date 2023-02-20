@@ -15,7 +15,7 @@ Parameters:
   DeploymentStage:
     Description: The stage to which it should be deployed
     Type: String
-    Default: Dev
+    Default: Prod
     AllowedValues:
       - Dev
       - Prod
